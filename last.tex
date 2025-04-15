@@ -1,0 +1,183 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in} % Adjust this value as needed
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+    \small \textbf{+1-930-333-5141}  $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{LinkedIn}}} 
+\end{center}
+
+%----------SUMMARY----------
+\section{\textbf{SUMMARY}}
+Machine Learning Engineer with robust experience in developing and deploying scalable ML solutions. Adept at collaborating with cross-functional teams to translate complex business challenges into effective AI solutions.
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Machine Learning Intern}{\textit{April 2024 - Dec 2024}}
+      {\textbf{Hyphenova AI}}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{Led development of a \textbf{multimodal document extraction pipeline} using fine-tuned LLMs (Hugging Face Transformers) to extract, normalize, and link supply chain data, reducing manual review time by 30\%.}
+        \resumeItem{Engineered scalable ML inference infrastructure on \textbf{AWS SageMaker} with Docker and Kubernetes; implemented continuous batching to boost throughput by 40\% during peak processing.}
+        \resumeItem{Collaborated with cross-functional teams to build backend automation features, including an \textbf{agent-based system} for auditing freight invoices that lowered operational costs by 20\%.}
+        \resumeItem{Optimized data preprocessing workflows with \textbf{Apache Spark}, enabling robust real-time analytics and ensuring model reliability at scale.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+  {Machine Learning Intern}{\textit{May 2022 - Oct 2022}}
+  {\textbf{Enterprise Business Technologies Pvt Ltd}}{Mumbai, India}
+  \resumeItemListStart
+    \resumeItem{Developed a customer segmentation model using unsupervised learning (K-means, PCA), which improved targeted marketing strategies and boosted customer engagement by 20\%.}
+    \resumeItem{Enhanced predictive analytics pipelines with XGBoost on Azure ML, reducing model deployment time by 30\% and increasing forecasting precision by 15\%.}
+    \resumeItem{Automated data preprocessing with Python and Pandas, cutting manual effort by 50\% and accelerating model training cycles.}
+    \resumeItem{Collaborated with data engineering teams to integrate scalable ML solutions into production environments.}
+  \resumeItemListEnd
+
+
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Indiana University Bloomington}{\hfill Aug 2023 -- May 2025}
+      {\textbf{Master of Science in Data Science}}{Indiana, United States}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Data Visualization, Big Data Applications, Cloud Computing, Graph Analytics, Applied ML, Statistics}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {University of Mumbai}{\hfill Aug 2018 -- May 2022}
+      {\textbf{Bachelor of Engineering in Electronics}}{Maharashtra, India}
+      
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{\textbf{TECHNICAL SKILLS}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming \& Databases:}{ SQL (BigQuery, PostgreSQL), Python, R, NoSQL, MySQL} \\
+     \textbf{Data Visualization \& BI:}{ Looker (LookML), Tableau, Power BI, D3.js} \\
+     \textbf{Cloud \& Data Engineering:}{ GCP (BigQuery, GCP APIs), AWS (Glue, EC2, S3, SageMaker), Apache Spark, Kafka, Airflow} \\
+     \textbf{ETL \& Infrastructure:}{ CI/CD pipelines, Docker, Kubernetes, Terraform} \\
+     \textbf{Machine Learning \& Analytics:}{ Scikit-learn, TensorFlow, PyTorch, Hugging Face Transformers, Regression, Time Series, A/B Testing, Data Mining} \\
+     \textbf{Version Control \& Collaboration:}{ Git, GitHub, Agile/Scrum} \\
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{\textbf{PROJECTS}}
+  \resumeSubHeadingListStart
+  
+    \resumeProjectHeading
+        {\textbf{Document Extraction, Normalization \& Linking using Multimodal LLMs} $|$ \emph{AWS SageMaker, Docker, Kubernetes}}{\textit{Feb 2024 – Present}}
+        \resumeItemListStart
+          
+          \resumeItem{Deployed the model on AWS SageMaker using Docker and Kubernetes, enabling scalable, real-time inference.}
+          \resumeItem{Integrated model outputs with backend APIs and Elasticsearch to facilitate seamless data linking and workflow automation.}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading
+        {\textbf{Freight Invoice Auditing Agent using Fine-Tuned LLMs} $|$ \emph{AWS, FastAPI, Docker}}{\textit{Mar 2024 – Present}}
+        \resumeItemListStart
+          \resumeItem{Designed and implemented an AI-driven agent leveraging a fine-tuned GPT-based model to audit freight invoices, identifying discrepancies and anomalies.}
+          \resumeItem{Reduced invoice auditing time by 25\% through automated extraction and normalization of complex invoice formats.}
+          \resumeItem{Deployed the agent as a RESTful API on AWS using Docker, ensuring scalable, high-throughput inference and smooth backend integration.}
+          
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\end{document}

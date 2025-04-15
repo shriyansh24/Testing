@@ -1,0 +1,178 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in}
+
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+   \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+   \small \textbf{+1-930-333-5141}  $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{LinkedIn}}} 
+\end{center}
+
+%----------SUMMARY----------
+\section{\textbf{SUMMARY}}
+\textbf{Machine Learning Scientist} with expertise in \textbf{deep learning}, \textbf{LLMs}, and \textbf{natural language processing}. Experienced in developing \textbf{production-quality}, \textbf{scalable ML solutions} using \textbf{PyTorch} and \textbf{TensorFlow}.
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Machine Learning Engineer}{\textit{April 2024 - Dec 2024}}
+      {\textbf{Hyphenova AI}}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{\textbf{Designed} and \textbf{implemented} multiple \textbf{deep learning models} using \textbf{PyTorch} and \textbf{TensorFlow} that improved fraud detection accuracy by 32\% while reducing false positives by 18\%}
+        \resumeItem{\textbf{Developed} and \textbf{fine-tuned} a domain-specific \textbf{LLM} using \textbf{LangChain} and \textbf{RAG} techniques, \textbf{collaborating closely} with compliance teams to ensure solutions met regulatory requirements}
+        \resumeItem{\textbf{Architected} a \textbf{cloud-native} solution using \textbf{vector databases} deployed via \textbf{Kubernetes} to enable semantic search across 3M+ financial documents}
+        \resumeItem{\textbf{Established} comprehensive \textbf{CI/CD pipelines} with \textbf{robust unit tests} to ensure reliable deployment of ML models, reducing production incidents by 63\%}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ML Research Intern}{\textit{May 2022 - Oct 2022}}
+      {\textbf{Enterprise Financial Technologies}}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Implemented} \textbf{reinforcement learning models} for automated trading strategies, \textbf{collaborating closely} with trading desk teams to align models with business objectives}
+        \resumeItem{\textbf{Designed} \textbf{experimental frameworks} with \textbf{intrinsic and extrinsic metrics} aligned with business KPIs to evaluate model performance in production scenarios}
+        \resumeItem{\textbf{Optimized} \textbf{ML pipelines} for distributed training on \textbf{AWS} and \textbf{GCP} infrastructure, reducing model training time by 68\% while maintaining accuracy}
+        \resumeItem{\textbf{Developed} \textbf{production-quality code} with comprehensive error handling, logging, and monitoring to ensure reliable operation in business-critical environments}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textbf{KEY PROJECTS}}
+  \resumeSubHeadingListStart
+  
+    \resumeProjectHeading
+        {\textbf{Financial LLM Assistant} $|$ \emph{PyTorch, LangChain, LangGraph, Vector DB, RAG, AWS SageMaker}}{\textit{Sep 2024 – Dec 2024}}
+        \resumeItemListStart
+          \resumeItem{\textbf{Developed} a specialized \textbf{LLM application} with \textbf{production-quality code} including extensive error handling, monitoring, and \textbf{CI/CD integration}}
+          \resumeItem{\textbf{Fine-tuned} open-source \textbf{transformer models} with \textbf{continuous A/B testing} to optimize performance based on business metrics}
+          \resumeItem{\textbf{Collaborated} with compliance and legal teams to ensure the system adhered to regulatory requirements while maintaining high utility for end users}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading
+        {\textbf{Distributed ML Training Framework} $|$ \emph{PyTorch, AWS, GCP, Docker, Kubernetes}}{\textit{May 2024 – Aug 2024}}
+        \resumeItemListStart
+          \resumeItem{\textbf{Architected} a scalable framework for \textbf{distributed training} deployed on \textbf{cloud infrastructure} with automated scaling capabilities}
+          \resumeItem{\textbf{Implemented} data parallelism and model sharding techniques with \textbf{extensive debugging tools} to ensure reproducible training results}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS & CERTIFICATIONS-----------
+\section{\textbf{TECHNICAL SKILLS}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Machine Learning:}{ \textbf{Deep Learning}, \textbf{Reinforcement Learning}, \textbf{LLMs}, \textbf{Natural Language Processing}, \textbf{Computer Vision}, Time Series Analysis} \\
+     \textbf{ML Frameworks:}{ \textbf{PyTorch}, \textbf{TensorFlow}, \textbf{Scikit-learn}, \textbf{Keras}, \textbf{Hugging Face Transformers}} \\
+     \textbf{LLM Ecosystem:}{ \textbf{LangChain}, \textbf{LangGraph}, \textbf{Vector Databases}, \textbf{RAG}, \textbf{Prompt Engineering}, \textbf{Fine-tuning}} \\
+     \textbf{Programming:}{ \textbf{Python}, \textbf{SQL}, \textbf{NumPy}, \textbf{Pandas}, \textbf{SciPy}, R, CUDA, C++} \\
+     \textbf{MLOps \& DevOps:}{ \textbf{CI/CD Pipelines}, \textbf{Docker}, \textbf{Kubernetes}, \textbf{Unit Testing}, \textbf{Git}, \textbf{Production Debugging}, Jenkins} \\
+     \textbf{Cloud \& Big Data:}{ \textbf{AWS SageMaker}, \textbf{GCP Vertex AI}, \textbf{Distributed Computing}, Apache Spark, Hadoop, Data Pipelines} \\
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Indiana University Bloomington}{\hfill Aug 2023 -- May 2025}
+      {\textbf{Master of Science in Data Science}}{Indiana, United States}
+      \resumeItemListStart
+        \resumeItem{Specialization: Machine Learning and Artificial Intelligence}
+        \resumeItem{Relevant Coursework: Deep Learning Architectures, Natural Language Processing, Reinforcement Learning, Cloud Computing for ML, Software Engineering for ML, Statistical Machine Learning, Advanced Mathematics for ML}
+        \resumeItem{Research Focus: Applications of Large Language Models in Financial Services}
+      \resumeItemListEnd
+
+    
+  \resumeSubHeadingListEnd
+\end{document}

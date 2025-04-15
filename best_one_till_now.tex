@@ -1,0 +1,97 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[left=0.75cm,right=0.75cm,top=1cm,bottom=1cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{array}
+\usepackage{times}
+
+% Adjusted section and subsection spacing
+\titleformat{\section}{\normalsize\bfseries}{\thesection}{1em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{*0.25}{*0.25} % Reduced spacing for section
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{*0.25}{*0.1} % Reduced spacing for subsection
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.3em}
+\pagestyle{empty}
+
+% Modified \cvitem and \workexp commands to remove extra white space
+\newcommand{\cvitem}[4]{
+  \textbf{#1} \hfill #2 \\
+  #3 \hfill #4 \par\vspace{-0.5em} % Adjusted spacing here
+}
+
+\newcommand{\workexp}[4]{
+  \textbf{#1} \hfill \textit{#2}\\
+  \textit{#3} \hfill #4\\
+  \vspace{-1em} % Adjusted spacing here
+}
+
+\begin{document}
+
+\begin{center}
+\textbf{\LARGE SHRIYANSH SINGH}\\
+\normalsize
+\begin{tabular}{>{\raggedright}p{0.5\textwidth} >{\raggedleft}p{0.5\textwidth}}
++1 930 333 5141 & \href{mailto:shriyansh.singh24@gmail.com}{shriyansh.singh24@gmail.com} \\
+\href{https://www.linkedin.com/in/shriyansh-bir-singh}{LinkedIn} & \href{https://github.com/shriyansh24}{GitHub} \\
+\end{tabular}
+\end{center}
+
+\small{Data Scientist with a robust background in machine learning, data analysis, and engineering. Skilled in deploying advanced predictive models and real-time analytics solutions, leveraging tools like Python, TensorFlow, and Apache Spark. Seeking to contribute to innovative projects that harness the power of AI and data science to solve complex challenges.}
+
+\section*{EDUCATION}
+\cvitem{Indiana University Bloomington}{Aug 2023 – May 2025}{Master of Science in Data Science}{Indiana}
+\textit{Relevant Courses:} Information Visualization, Data Mining, Applied Machine Learning, Statistics, Big Data Applications, Cloud Computing, Graph Analytics, Applied Database Technologies, Intelligent Systems
+
+\section*{PROFESSIONAL EXPERIENCE}
+\workexp{Machine Learning Intern}{April 2024 - Present}{Hyphenova AI}{Los Angeles, California}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Led cross-functional teams using Agile methodologies and Jira to deploy NLP-based content filtering algorithms, increasing successful brand-creator matches by 30\% and improving user satisfaction by 15\%
+\item Improved brand-creator matching success rates by 25\% and enhanced campaign performance through predictive models using Python and Random Forest algorithms, with optimized feature selection
+\item Enhanced model accuracy by 15\% for underrepresented categories and improved system reliability by implementing SMOTE resampling techniques to address data imbalance in the brand-creator matching system
+\item Designed and implemented a high-performance data pipeline using Apache Spark and AWS, achieving a 40\% reduction in data processing time and enabling real-time analytics for brand engagement
+\item Engineered and integrated real-time data quality checks using custom validation scripts, resulting in a 30\% improvement in data reliability and a 20\% reduction in analytics errors
+\end{itemize}
+
+\workexp{Junior Business Analyst Intern}{May 2022 - Oct 2022}{Enterprise Business Technologies Pvt. Ltd}{Mumbai, India}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Aligned project strategies with business objectives by leading the implementation of the OKR framework, boosting project completion rates by 25\% and enhancing client satisfaction by 20\%
+\item Optimized data analysis systems in Power BI by refining data models and automating validation processes, resolving critical accuracy issues and achieving a 15\% improvement in report reliability while reducing generation time by 40\%
+\item Conducted comprehensive market analysis using linear regression and time series forecasting, improving forecast accuracy by 18\% and contributing to a 10\% increase in quarterly revenue
+\end{itemize}
+
+\section*{PROJECTS}
+\subsection*{Fraud Detection in Financial Transactions \hfill Oct 2023 – Jan 2024}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Developed a real-time fraud detection system using Python, Scikit-learn, and XGBoost, incorporating feature engineering and hyperparameter tuning, improving detection accuracy by 28\% and reducing false positives by 35\%
+\item Engineered advanced features including transaction pattern recognition and anomaly detection using unsupervised learning techniques, increasing the system's reliability and reducing customer complaints related to false flags by 40\%
+\item Optimized the model pipeline using Apache Spark by implementing distributed computing and caching mechanisms, cutting data processing time by 40\% and enabling the system to handle a 3x increase in transaction volume without performance degradation
+\end{itemize}
+
+\subsection*{Customer Churn Prediction for Telecom Industry \hfill Aug 2022 – Feb 2023}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Built a customer churn prediction model using TensorFlow, Keras, and LSTM networks, optimizing hyperparameters and using time series data, achieving a 22\% increase in customer retention rates through precise identification of at-risk accounts
+\item Analyzed customer behavior metrics using Pandas and SQL, employing correlation analysis and feature selection techniques to identify key churn indicators, improving model precision by 18\% 
+\item Deployed the model on AWS SageMaker, using autoscaling and batch inference to enable scalable predictions, facilitating a 15\% reduction in overall churn rate through targeted customer engagement initiatives
+\end{itemize}
+
+
+\section*{SKILLS}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item \textbf{Programming Languages:} Python, R, SQL, NoSQL (MongoDB, Neo4j), Java, C/C++, Julia, GoLang, Scala, Bash
+\item \textbf{ML Toolkit:} Scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, Matplotlib, Hugging Face
+\item \textbf{Data Engineering:} Hadoop, Spark, AWS, GCP, Docker, Kubernetes, Git, Databricks, Apache Kafka, Airflow, Pyspark
+\item \textbf{Analytical Tools:} Alteryx, Tableau, Power BI, D3.js, Statistical Analysis, Time Series Analysis, A/B Testing
+\end{itemize}
+
+\section*{CERTIFICATIONS}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item \textbf{IBM:} Data Science Professional Certificate
+\item \textbf{Google:} Data Analytics Specialization
+\item \textbf{Deeplearning.ai:} Deep Learning Specialization, NLP Specialization, GANs Specialization
+\end{itemize}
+
+\end{document}

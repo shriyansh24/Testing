@@ -1,0 +1,177 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+    \small \textbf{+1-930-333-5141}  $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{LinkedIn}}} 
+\end{center}
+
+%----------SUMMARY----------
+\section{\textbf{SUMMARY}}
+Data Science graduate student proficient in \textbf{statistical modeling} and \textbf{Python}, passionate about leveraging \textbf{machine learning} to extract actionable insights from complex datasets for \textbf{strategic business decisions}
+
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Data Science Intern}{\textit{April 2024 - Dec 2024}}
+      {\textbf{Hyphenova AI}}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{\textbf{Engineered} time-series forecasting models with \textbf{Prophet} and \textbf{LSTM networks} that predicted customer churn with 35\% higher accuracy, directly increasing quarterly retention revenue by \$1.2M}
+        \resumeItem{\textbf{Architected} an end-to-end ETL pipeline using \textbf{Luigi} and \textbf{Airflow} that automated cleaning of 500GB+ daily transaction data, reducing preprocessing overhead from 4 hours to 90 minutes}
+        \resumeItem{\textbf{Developed} interactive \textbf{Tableau dashboards} with custom SQL queries tracking key conversion metrics across 8 product lines, identifying a \$3.5M revenue opportunity in underperforming segments}
+        \resumeItem{\textbf{Led} biweekly cross-functional workshops with product and marketing teams to translate business KPIs into measurable data objectives, resulting in 5 high-impact ML initiatives}
+        \resumeItem{\textbf{Delivered} executive presentations on customer segmentation findings that influenced the company's 2025 market expansion strategy, praised by the CTO for technical clarity}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Analytics Research Assistant}{\textit{May 2022 - Oct 2022}}
+      {\textbf{Enterprise Business Technologies Pvt Ltd}}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Analyzed} 3TB of transaction logs using \textbf{Mann-Whitney U tests} and \textbf{gradient boosting} that identified anomalous payment patterns, directly reducing fraud losses by 25\% (\$340K quarterly)}
+        \resumeItem{\textbf{Engineered} a customer churn prediction model using \textbf{XGBoost} with custom feature engineering that achieved 87\% F1-score, enabling targeted retention campaigns that recovered \$1.2M in at-risk accounts}
+        \resumeItem{\textbf{Built} a serverless data pipeline (\textbf{AWS Lambda}, Step Functions, S3) that integrated 5 disparate data sources with real-time validation rules, reducing data quality incidents by 76\%}
+        \resumeItem{\textbf{Designed} and executed multivariate A/B tests for recommendation algorithm variants, establishing statistical significance for a new approach that increased click-through rates by 32\%}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textbf{PROJECTS}}
+  \resumeSubHeadingListStart
+  
+    \resumeProjectHeading
+        {\textbf{Commodity Price Prediction System} $|$ \emph{Python, TensorFlow, AWS, Time Series Analysis}}{\textit{Jan 2024 – Apr 2024}}
+        \resumeItemListStart
+          \resumeItem{\textbf{Engineered} a multi-factor \textbf{LSTM model} incorporating 15 macroeconomic indicators that predicted 30-day oil and natural gas price movements with RMSE 22\% lower than traditional ARIMA approaches}
+          \resumeItem{\textbf{Implemented} a serverless architecture using \textbf{AWS Step Functions}, Lambda, and SageMaker to process 10+ years of historical commodity data and automatically retrain models on daily market fluctuations}
+          \resumeItem{\textbf{Designed} an interactive \textbf{Plotly dashboard} with Monte Carlo simulations visualizing price confidence intervals and factor sensitivities, enabling clear interpretation of model uncertainty}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading
+        {\textbf{Energy Consumption Anomaly Detection} $|$ \emph{Python, PyTorch, Statistical Analysis, Power BI}}{\textit{Sep 2023 – Dec 2023}}
+        \resumeItemListStart
+          \resumeItem{\textbf{Developed} a hybrid anomaly detection system combining \textbf{isolation forests} with a \textbf{variational autoencoder} that identified irregular energy usage patterns across 10,000+ industrial sensors}
+          \resumeItem{\textbf{Implemented} a custom \textbf{PyTorch autoencoder} with attention mechanism that achieved 93\% precision and 89\% recall, outperforming traditional statistical methods by 37\% on benchmark datasets}
+          \resumeItem{\textbf{Created} a real-time monitoring system with \textbf{Power BI} streaming datasets and custom DAX measures that reduced false positive alerts by 65\%, saving an estimated 120 analyst hours monthly}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS & CERTIFICATIONS-----------
+\section{\textbf{SKILLS \& CERTIFICATIONS}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming:}{ \textbf{Python} (NumPy, Pandas, Scikit-learn), R, SQL, Jupyter Notebooks} \\
+     \textbf{Machine Learning:}{ \textbf{Statistical Modeling}, Classification, Regression, Clustering, Time Series Analysis} \\
+     \textbf{Deep Learning:}{ \textbf{TensorFlow}, \textbf{PyTorch}, \textbf{Keras}, Neural Networks, CNNs, RNNs, Transformers} \\
+     \textbf{Data Visualization:}{ \textbf{Tableau}, \textbf{Power BI}, Matplotlib, Seaborn, Plotly} \\
+     \textbf{Cloud \& Big Data:}{ \textbf{AWS} (S3, EC2, SageMaker, Lambda), Spark, Hadoop} \\
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Indiana University Bloomington}{\hfill Aug 2023 -- May 2025}
+      {\textbf{Master of Science in Data Science}}{Indiana, United States}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Machine Learning, Statistical Modeling, Deep Learning, Data Mining, Data Visualization}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+\end{document}

@@ -1,0 +1,160 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[left=0.75cm,right=0.75cm,top=1cm,bottom=1cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{array}
+\usepackage{times}
+
+% Adjusted section and subsection spacing
+\titleformat{\section}{\normalsize\bfseries}{\thesection}{1em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{*0.25}{*0.25} % Reduced spacing for section
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{*0.25}{*0.1} % Reduced spacing for subsection
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.3em}
+\pagestyle{empty}
+
+% Modified \cvitem and \workexp commands to remove extra white space
+\newcommand{\cvitem}[4]{
+  \textbf{#1} \hfill #2\\
+  #3 \hfill #4 \par\vspace{-0.5em} % Adjusted spacing here
+}
+
+\newcommand{\workexp}[4]{
+  \textbf{#1} \hfill #2\\
+  #3 \hfill #4\\
+  \vspace{-1em} % Adjusted spacing here
+}
+
+\begin{document}
+
+\begin{center}
+\textbf{\LARGE SHRIYANSH SINGH}\\
+\normalsize
++1 930 333 5141 | shriyansh.singh24@gmail.com | \href{https://www.linkedin.com/in/shriyansh-bir-singh}{LinkedIn} | \href{https://github.com/shriyansh24}{GitHub}
+\end{center}
+
+\section*{EDUCATION}
+\cvitem{Indiana University Bloomington}{Aug 2023 – May 2025}{Master of Science in Data Science}{Indiana}
+\textnormal{Relevant Courses:} Information Visualization, Data Mining, Applied Machine Learning, Statistics, Big Data Applications, Cloud Computing, Graph Analytics, Applied Database Technologies, Intelligent Systems
+
+\section*{PROFESSIONAL EXPERIENCE}
+
+\workexp{Data Analyst Intern}{April 2024 - Present}{Hyphenova AI}{Los Angeles, California}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Analyzed large datasets using Python (Pandas, NumPy) and SQL to extract actionable insights on brand-creator matches, employing regression analysis and data visualization techniques in Tableau, resulting in a 30\% increase in successful matches and a 15\% boost in user satisfaction.
+\item Improved data quality and reliability by implementing real-time data validation scripts in Python (using Pandas for data manipulation and PyOD for outlier detection), which targeted missing values and outliers, increasing data accuracy by 30\% and reducing analytics errors by 20\%, directly enhancing reporting precision.
+\item Developed and optimized data pipelines using Apache Spark and AWS (Glue, S3), incorporating partitioning strategies and efficient data storage formats, reducing data processing times by 40\%, which enabled real-time reporting and facilitated quicker decision-making for stakeholders in campaign management.
+\item Conducted feature engineering and data preprocessing, including normalization, handling missing data, and feature scaling, to refine datasets for analysis, leading to a 25\% improvement in campaign performance and more accurate data-driven recommendations.
+\item Collaborated with cross-functional teams to design interactive dashboards in Tableau, visualizing key performance indicators (KPIs) such as engagement rates and conversion metrics, which enhanced data-driven strategy formulation for client campaigns.
+\end{itemize}
+
+\workexp{Data Analyst Intern}{May 2022 - Oct 2022}{Enterprise Business Technologies Pvt Ltd}{Mumbai, India}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Analyzed project data using Python (Pandas, NumPy) and Excel to implement the OKR framework, using data-driven insights to align project strategies with business objectives, resulting in a 25\% increase in project completion rates and a 20\% improvement in client satisfaction.
+\item Revamped Power BI dashboards by refining data models and automating validation processes using DAX and M language, which improved report reliability by 15\% and reduced report generation time by 40\%.
+\item Conducted comprehensive market analysis using Python (Pandas, NumPy, Statsmodels) for data wrangling, and applied linear regression and time series forecasting techniques, enhancing forecast accuracy by 18\% and contributing to a 10\% increase in quarterly revenue.
+\item Developed and presented data visualizations in Power BI to communicate market trends and performance metrics to stakeholders, enabling data-driven decisions that supported business growth initiatives, including optimizing marketing strategies based on forecasted trends.
+\end{itemize}
+
+\section*{PROJECTS}
+
+\subsection*{Retail Inventory Optimization}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Analyzed historical sales and inventory data using Python and Pandas to identify demand trends and optimize inventory levels across 50 retail locations, leading to a 15\% reduction in holding costs and a 10\% decrease in stockouts.
+\item Developed and deployed Exponential Smoothing models for demand forecasting, achieving a 90\% accuracy rate, which informed inventory replenishment decisions.
+\item Conducted ABC classification of inventory, prioritizing high-value items and improving turnover rates by 12\% through targeted stock management.
+\item Implemented Monte Carlo simulations to evaluate inventory scenarios, optimizing reorder points and reducing excess stock by 8\%.
+\end{itemize}
+
+\subsection*{Sentiment Analysis on Social Media Data}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Extracted and preprocessed over 100,000 social media posts using Python, Beautiful Soup, and NLP techniques to prepare data for sentiment analysis, addressing challenges in noise reduction and text normalization.
+\item Built a sentiment classification model with NLTK and Scikit-learn, fine-tuning hyperparameters to achieve an F1-score of 0.85, effectively differentiating positive, negative, and neutral sentiments.
+\item Created dynamic Tableau dashboards to visualize sentiment trends and correlate spikes in negative feedback with product delivery issues, providing actionable insights.
+\item Delivered insights to the marketing team that informed targeted campaigns, resulting in a 25\% increase in positive sentiment and improved customer perception within three months.
+\end{itemize}
+
+\subsection*{Sales Data Analysis and Forecasting}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Collected, cleaned, and integrated sales data from multiple sources, including CRM and ERP systems, using Python and Pandas, standardizing over 10,000 records for analysis.
+\item Built time series forecasting models using ARIMA and Prophet, incorporating external variables like seasonality, holidays, and promotions, leading to a 20\% improvement in forecast accuracy.
+\item Performed feature engineering to identify key drivers of sales trends, enhancing predictive power and enabling more accurate inventory planning.
+\item Created interactive Tableau dashboards to visualize forecasts and trend analyses, supporting stakeholders in making data-driven decisions for inventory management and marketing strategies.
+\end{itemize}
+
+\subsection*{Customer Segmentation Using Clustering}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Extracted and cleaned customer data from various sources using SQL and Python, handling missing values and normalizing over 100,000 records to ensure data quality for clustering analysis.
+\item Employed K-means clustering with PCA for dimensionality reduction, successfully segmenting customers into 5 distinct groups based on purchasing behavior and demographic attributes, enhancing model interpretability.
+\item Assessed clustering quality through silhouette scores and iteratively refined parameters to optimize results, achieving clear and actionable customer segments.
+\item Developed comprehensive segmentation dashboards in Tableau, enabling targeted marketing efforts that increased campaign effectiveness by 30\% through personalized customer interactions.
+\end{itemize}
+
+\subsection*{Employee Performance Analysis}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Collected and analyzed employee performance data across multiple departments using Python and SQL, processing over 5,000 records to identify key drivers of high performance, such as training frequency and peer collaboration.
+\item Developed multiple regression models to quantify the impact of individual and team-level factors on performance, validating models with cross-validation techniques to ensure robustness.
+\item Utilized feature selection methods to refine the models, enhancing interpretability and predictive accuracy by focusing on the most impactful variables.
+\item Designed interactive Power BI dashboards to visualize performance insights, enabling HR teams to craft data-driven retention strategies that boosted employee retention by 15\%.
+\end{itemize}
+
+\subsection*{Finance: Credit Risk Analysis}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Extracted and cleaned loan applicant data using Python and SQL, including over 50,000 records with credit histories, financial statuses, and demographic details, standardizing data for predictive modeling.
+\item Built a logistic regression model to predict credit risk, incorporating domain-specific features like credit utilization and payment history, which significantly improved model accuracy.
+\item Validated model performance using ROC and AUC metrics, achieving a 25\% improvement in prediction accuracy compared to baseline models, directly supporting risk management strategies.
+\item Developed interactive Tableau dashboards to present risk scores and model insights, enabling financial analysts to make data-driven decisions that reduced loan default rates by 10\%.
+\end{itemize}
+
+\subsection*{Healthcare: Patient Readmission Prediction}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Processed and analyzed hospital and patient records using Python and SQL, focusing on 20,000+ patient cases to identify factors contributing to 30-day readmissions, including prior visits and medication adherence.
+\item Developed decision tree models, applying SMOTE to balance the dataset, which effectively reduced false negatives and lowered the readmission rate by 18\%.
+\item Conducted a feature importance analysis to prioritize critical predictors, providing actionable insights for healthcare providers to focus on high-risk factors like chronic conditions.
+\item Implemented a real-time monitoring dashboard in Power BI, allowing healthcare teams to proactively intervene with at-risk patients, resulting in \$2M annual cost savings through reduced readmission rates.
+\end{itemize}
+
+\subsection*{E-commerce: Product Recommendation System}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Aggregated and processed over 1 million transactions and user behavior records from a major e-commerce platform using Python and AWS data lakes, ensuring data integrity for recommendation modeling.
+\item Developed a hybrid recommendation system combining collaborative and content-based filtering techniques, employing matrix factorization with Scikit-learn to personalize user experiences.
+\item Enhanced model performance through extensive hyperparameter tuning and A/B testing, resulting in a 15\% increase in average order value and improved recommendation relevance.
+\item Deployed the recommendation system on AWS SageMaker with autoscaling capabilities, efficiently managing peak demand loads and reducing cart abandonment rates by 10\%, enhancing overall customer satisfaction.
+\end{itemize}
+
+\subsection*{Predictive Maintenance for Manufacturing Equipment}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Processed over 1 million IoT sensor data points from manufacturing equipment using Python and SQL, performing data cleaning and transformation to ensure high-quality inputs for predictive modeling.
+\item Developed a predictive maintenance model using logistic regression and random forests, fine-tuning algorithms to achieve 92\% accuracy in forecasting equipment failures.
+\item Integrated anomaly detection techniques, such as Z-score analysis, to flag irregularities in equipment performance, reducing false positive rates by 10\%.
+\item Designed and deployed a real-time monitoring dashboard in Power BI, enabling maintenance teams to track equipment health proactively, leading to a 20\% reduction in unplanned downtime and a 15\% cut in maintenance costs.
+\end{itemize}
+
+\subsection*{Customer Lifetime Value (CLV) Prediction}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Conducted RFM analysis on transaction data from 100,000+ customers using Python to segment customers by recency, frequency, and monetary value, providing a foundation for CLV prediction.
+\item Developed and validated a regression model to predict Customer Lifetime Value, utilizing behavioral and demographic features with recursive feature elimination, achieving an 85\% accuracy rate.
+\item Applied K-means clustering to segment customers into distinct groups, focusing on high-value clusters for targeted marketing, leading to a 20\% increase in ROI.
+\item Built interactive CLV dashboards in Tableau, enabling real-time tracking of customer value segments and supporting retention strategies that improved customer loyalty by 15\%.
+\end{itemize}
+
+\section*{SKILLS}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item \textbf{Languages \& Tools:} Python, R, SQL, NoSQL (MongoDB, Neo4j), Excel, Java, C/C++, Bash
+\item \textbf{Data Analysis \& Visualization:} Data cleaning, data wrangling, exploratory data analysis (EDA), data visualization (Tableau, Power BI, Excel, Matplotlib, Seaborn)
+\item \textbf{Statistical Analysis \& Modeling:} Descriptive statistics, inferential statistics, regression analysis (Linear, Logistic), hypothesis testing, time series analysis, A/B testing, clustering (K-means, DBSCAN)
+\item \textbf{Database Management:} Database querying and manipulation, ETL processes, data modeling (PostgreSQL, MySQL)
+\item \textbf{Data Wrangling \& Automation:} Data manipulation, automation of data processes, scripting for data tasks (Pandas, NumPy)
+\item \textbf{Data Engineering \& Big Data:} Data pipeline development, data extraction, transformation, and loading (ETL), big data processing (Apache Spark, Hadoop, AWS Redshift, Google BigQuery)
+\item \textbf{Machine Learning (Relevant to Data Analysis):} Predictive modeling, classification, clustering, model evaluation (Scikit-learn, TensorFlow, XGBoost)
+\item \textbf{Business Intelligence \& Reporting:} Dashboard creation, KPI tracking, data storytelling, and report generation (Tableau, Power BI, Google Data Studio)
+\item \textbf{Version Control \& Collaboration:} Git, GitHub, GitLab for version control and team collaboration
+\item \textbf{Cloud \& Deployment Platforms:} AWS (S3, Redshift, Glue), GCP, Azure for data storage, processing, and model deployment
+\item \textbf{Soft Skills:} Analytical thinking, problem-solving, communication skills, stakeholder engagement, presentation of insights, teamwork
+\end{itemize}
+
+\end{document}

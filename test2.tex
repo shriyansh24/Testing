@@ -1,0 +1,216 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+\usepackage{lmodern}
+
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in} % Adjust this value as needed
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\footskip}{4.08003pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+    \small \textbf{+1-930-333-5141}  $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{linkedin.com/in/shriyansh-bir-singh}}} $|$
+    \href{https://github.com/shriyansh24}{\textbf{\underline{github.com/shriyansh24}}}
+\end{center}
+\vspace{-25pt}
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indiana University Bloomington}{Indiana, United States}
+      {Master of Science in Data Science}{Aug 2023 -- May 2025}
+      \vspace{4pt}
+      \small{Relevant Coursework: Information Visualization, Data Mining, Applied Machine Learning, Statistics, Big Data Applications, Cloud Computing, Graph Analytics, Applied Database Technologies, Intelligent Systems}
+      \vspace{8pt}
+    \resumeSubheading
+      {University of Mumbai}{Maharashtra, India}
+      {Bachelor of Engineering in Information Technology}{Aug 2018 -- May 2022}
+  \resumeSubHeadingListEnd
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Data Analyst Intern}{April 2024 -- Present}
+      {Hyphenova AI}{Los Angeles, California}
+      \resumeItemListStart
+        \resumeItem{Analyzed large datasets using Python (Pandas, NumPy) and SQL, applying logistic regression to identify key predictors of successful brand-creator matches. Developed Tableau visualizations, driving a 30\% increase in match success rates and a 15\% boost in user satisfaction.}
+        \resumeItem{Enhanced data quality by 30\% and reduced analytics errors by 20\% through the implementation of real-time data validation scripts in Python. Utilized Pandas for data manipulation and PyOD for anomaly detection, significantly improving reporting precision for marketing strategies.}
+        \resumeItem{Built and optimized scalable data pipelines using Apache Spark and AWS (Glue, S3), implementing partitioning strategies and optimized data storage formats (Parquet) that reduced processing times by 40\%, enabling real-time data availability for campaign management.}
+        \resumeItem{Conducted feature engineering and preprocessing (normalization, handling missing data, feature scaling) to enhance dataset quality for machine learning models, improving campaign performance by 25\% and yielding more precise data-driven recommendations.}
+        \resumeItem{Designed interactive Tableau dashboards for KPIs like engagement and conversion metrics, directly influencing strategic adjustments in client campaigns, leading to a 20\% improvement in data-driven decision-making across marketing teams.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Analyst Intern}{May 2022 -- Oct 2022}
+      {Enterprise Business Technologies Pvt Ltd}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Utilized Python (Pandas, NumPy) and Excel to analyze project data within the OKR framework, applying descriptive analytics and trend analysis, which aligned project strategies with business goals, boosting project completion rates by 25\% and client satisfaction by 20\%.}
+        \resumeItem{Enhanced Power BI dashboards by refining data models (e.g., star schema optimizations) and automating validations with DAX and M, leading to a 15\% increase in report reliability and a 40\% reduction in generation time, thus speeding up decision cycles.}
+        \resumeItem{Conducted comprehensive market analysis using Python (Pandas, NumPy, Statsmodels) for data wrangling, including competitive trend analysis and segmentation, applying linear regression and ARIMA models to improve forecast accuracy by 18\%, aiding a 10\% increase in quarterly revenue.}
+        \resumeItem{Developed and presented Power BI visualizations showcasing market trends and KPIs, directly informing stakeholders on marketing strategy optimizations, resulting in a 15\% improvement in campaign performance and enhanced targeting of growth opportunities.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textbf{PROJECTS}}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Retail Inventory Optimization} $|$ \emph{Python, Data Analysis, Machine Learning}}{\textit{2023}}
+      \resumeItemListStart
+        \resumeItem{Analyzed historical sales and inventory data using Python (Pandas) to identify demand patterns, applying Exponential Smoothing and ABC classification. Optimized stock levels across 50 locations, reducing holding costs by 15\% and stockouts by 10\%.}
+        \resumeItem{Developed Exponential Smoothing models for demand forecasting with a 90\% accuracy rate, directly informing inventory replenishment decisions, which minimized overstock situations and aligned inventory levels with demand variability, enhancing service levels.}
+        \resumeItem{Conducted ABC classification to prioritize high-value SKUs, improving turnover rates by 12\% and reducing excess inventory. This enabled better capital allocation and more efficient inventory management, directly supporting cost reduction strategies.}
+        \resumeItem{Implemented Monte Carlo simulations to assess inventory scenarios, optimizing reorder points and safety stock levels. This approach reduced excess inventory by 8\%, aligning inventory management with variability in demand and reducing stockouts.}
+      \resumeItemListEnd
+  % Force a new page before the skills section if needed
+\newpage
+    \resumeProjectHeading
+      {\textbf{Sentiment Analysis on Social Media Data} $|$ \emph{Python, NLP, Data Visualization}}{\textit{2023}}
+      \resumeItemListStart
+        \resumeItem{Extracted and preprocessed over 100,000 social media posts using Python (Beautiful Soup) and NLP techniques, including tokenization, stopword removal, and normalization. Enhanced data quality for sentiment analysis, enabling accurate model training and insights generation.}
+        \resumeItem{Developed a sentiment classification model using NLTK and Scikit-learn, applying TF-IDF for feature extraction and GridSearchCV for hyperparameter tuning, achieving an F1-score of 0.85. This accurately distinguished sentiments, aiding in targeted customer outreach strategies.}
+        \resumeItem{Created dynamic Tableau dashboards to visualize sentiment trends, correlating spikes in negative feedback with product delivery issues. These insights informed customer service improvements, increasing user satisfaction by 25\% through targeted corrective actions.}
+        \resumeItem{Delivered actionable insights to the marketing team, informing targeted engagement strategies that increased positive sentiment by 25\% within three months. This led to enhanced customer perception and optimized resource allocation for marketing campaigns.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Sales Data Analysis and Forecasting} $|$ \emph{Python, Time Series Analysis, Tableau}}{\textit{2023}}
+      \resumeItemListStart
+        \resumeItem{Collected, cleaned, and integrated sales data from CRM and ERP systems using Python (Pandas), standardizing over 10,000 records for robust analysis. Improved data quality facilitated accurate forecasting and strategic planning for sales operations, directly impacting revenue growth.}
+        \resumeItem{Developed time series forecasting models using ARIMA and Prophet, incorporating external variables such as seasonality, holidays, and promotions, improving forecast accuracy by 20\%. This enabled precise inventory planning and targeted promotional strategies, driving revenue.}
+        \resumeItem{Performed feature engineering, including the creation of lag variables and interaction terms, to identify key sales trend drivers. This enhanced model predictive power and supported more accurate inventory planning, aligning stock levels with demand patterns.}
+        \resumeItem{Developed interactive Tableau dashboards to visualize sales forecasts and trend analyses, empowering stakeholders to make data-driven decisions that optimized inventory levels and aligned marketing strategies with projected demand, directly impacting sales performance.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Customer Segmentation Using Clustering} $|$ \emph{Python, SQL, Tableau}}{\textit{2023}}
+      \resumeItemListStart
+        \resumeItem{Extracted and cleaned customer data using SQL and Python, addressing missing values and normalizing over 100,000 records. This preparation ensured high-quality data for clustering analysis, enabling accurate and actionable customer segmentation results.}
+        \resumeItem{Employed K-means clustering with PCA for dimensionality reduction, segmenting customers into 5 distinct groups based on purchasing behavior and demographics. This segmentation guided targeted marketing campaigns, increasing ROI by 30\% through personalized outreach.}
+        \resumeItem{Evaluated clustering quality using silhouette scores and the elbow method, iteratively refining parameters for optimal segmentation. These refinements produced clear, actionable segments that drove personalized marketing and product recommendations, enhancing customer engagement.}
+        \resumeItem{Developed comprehensive Tableau dashboards for segmentation insights, enabling targeted marketing strategies that boosted campaign effectiveness by 30\%. These strategies enhanced customer engagement and conversion rates, supporting overall business growth initiatives.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%-----------TECHNICAL SKILLS-----------
+\section{\textbf{TECHNICAL SKILLS}}
+\vspace{-3pt} % Adjust vertical space to fit better
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \small{
+        \textbf{Languages \& Tools:} Python (Pandas, NumPy, Scikit-learn, TensorFlow, PyOD), R, SQL, NoSQL (MongoDB, Neo4j), Excel, Java, C/C++, Bash \\
+        \textbf{Data Analysis \& Visualization:} Data Cleaning \& Wrangling, EDA, Statistical Analysis (Descriptive, Inferential), Data Visualization (Tableau, Power BI, Matplotlib, Seaborn) \\
+        \textbf{Statistical Analysis \& Modeling:} Regression Analysis (Linear, Logistic), Hypothesis Testing, Time Series Analysis (ARIMA, Prophet), A/B Testing, Clustering (K-means, DBSCAN) \\
+        \textbf{Database Management:} Database Querying and Manipulation (PostgreSQL, MySQL), ETL Processes, Data Modeling, Data Pipeline Development \\
+        \textbf{Data Engineering \& Big Data:} Data Pipeline Development, ETL Processes, Big Data Processing (Apache Spark, Hadoop, AWS Glue, Redshift, S3, Google BigQuery) \\
+        \textbf{Machine Learning:} Predictive Modeling, Classification, Clustering, Model Evaluation, Feature Engineering, Hyperparameter Tuning \\
+        \textbf{Business Intelligence \& Reporting:} Dashboard Creation, KPI Tracking, Data Storytelling, Report Generation \\
+        \textbf{Cloud \& Deployment Platforms:} AWS (S3, Redshift, Glue, SageMaker), GCP, Azure \\
+        \textbf{Version Control \& Collaboration:} Git, GitHub, GitLab
+    }
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}

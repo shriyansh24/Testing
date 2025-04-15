@@ -1,0 +1,108 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[left=0.75cm,right=0.75cm,top=1cm,bottom=1cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{array}
+\usepackage{times}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.3em}
+
+% Adjust section formatting
+\titleformat{\section}{\normalsize\bfseries}{\thesection}{1em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{0.25em}{0.25em}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{0.25em}{0.1em}
+
+\begin{document}
+
+%-------------------------------------------
+% Header & Contact Info
+%-------------------------------------------
+\begin{center}
+  {\Large \textbf{SHRIYANSH SINGH}}\\[0.5em]
+  +1 930 333 5141 $\cdot$ \href{mailto:shriyansh.singh24@gmail.com}{shriyansh.singh24@gmail.com} $\cdot$ 
+  \href{https://www.linkedin.com/in/shriyansh-bir-singh}{LinkedIn} $\cdot$ 
+  \href{https://github.com/shriyansh24}{GitHub}\\[0.5em]
+  % Consider adding a personal website if available.
+\end{center}
+
+%-------------------------------------------
+% Education
+%-------------------------------------------
+\section*{EDUCATION}
+\textbf{Indiana University Bloomington} \hfill Aug 2023 -- May 2025\\
+Master of Science in Data Science, Indiana, USA\\[0.3em]
+\textbf{Relevant Courses:} Applied Machine Learning, Intelligent Systems, Data Mining, Big Data Applications, Cloud Computing, Graph Analytics, Information Visualization, Applied Database Technologies
+
+%-------------------------------------------
+% Professional Experience
+%-------------------------------------------
+\section*{PROFESSIONAL EXPERIENCE}
+
+\textbf{Machine Learning Engineer Intern -- Cloud AI Solutions} \hfill Jun 2023 -- Present\\
+San Francisco, CA
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+  \item Developed and deployed end-to-end machine learning pipelines for financial risk modeling, reducing model inference time by 35\% and improving prediction accuracy by 20\%.
+  \item Engineered scalable data ingestion and preprocessing workflows using Apache Spark and AWS Lambda, processing over 500K transactions daily.
+  \item Optimized deep learning models using TensorFlow and PyTorch; implemented distributed training and hyperparameter tuning to cut training time by 30\%.
+  \item Collaborated with cross-functional teams to integrate ML models into production systems, achieving a 40\% boost in system throughput and lowering latency in real-time applications.
+\end{itemize}
+
+\textbf{Research Assistant in Machine Learning -- Data-Driven Healthcare} \hfill Aug 2022 -- May 2023\\
+Indiana University, Bloomington, IN
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+  \item Designed and implemented a convolutional neural network for medical image segmentation, increasing the dice coefficient from 0.78 to 0.85.
+  \item Leveraged transfer learning with ResNet and U-Net to detect anomalies in radiology images, reducing false positive rates by 25\%.
+  \item Automated continuous integration and model monitoring using Docker and Kubernetes, ensuring 99.5\% uptime in a production-like environment.
+  \item Authored technical reports and collaborated on publications; enhanced model interpretability using SHAP and LIME for clinical decision support.
+\end{itemize}
+
+%-------------------------------------------
+% Projects
+%-------------------------------------------
+\section*{PROJECTS}
+
+\textbf{Real-Time Stock Market Anomaly Detection} \hfill \textit{Personal Project}\\
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+  \item Developed an LSTM-based anomaly detection system for real-time financial data, reducing false alerts by 30\% and enabling proactive risk management.
+  \item Integrated statistical techniques with deep learning to flag abnormal market behaviors and deployed the model on AWS SageMaker for scalability.
+  \item Implemented automated data pipelines to process streaming data from multiple financial sources.
+\end{itemize}
+
+\textbf{Medical Image Analysis for Disease Detection} \hfill \textit{Personal Project}\\
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+  \item Built an advanced CNN-based system to detect diabetic retinopathy from retinal images, achieving 92\% accuracy on a benchmark dataset.
+  \item Utilized data augmentation and transfer learning to overcome limited data challenges; integrated model monitoring using TensorFlow Serving and Kubernetes.
+  \item Developed an end-to-end pipeline from image preprocessing to real-time prediction, enabling timely clinical decision support.
+\end{itemize}
+
+\textbf{E-commerce Product Recommendation System} \hfill \textit{Personal Project}\\
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+  \item Engineered a hybrid recommendation engine that combined collaborative filtering with deep learning, resulting in a 25\% increase in click-through rates.
+  \item Leveraged Apache Spark for large-scale data processing and deployed the model on Azure ML to support real-time personalized recommendations.
+  \item Conducted A/B testing to validate model performance and continuously optimized the system based on user feedback.
+\end{itemize}
+
+\textbf{LLM-Powered Customer Support Chatbot} \hfill \textit{Personal Project}\\
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+  \item Fine-tuned a large language model using Hugging Face Transformers to create an intelligent chatbot for an e-commerce platform, achieving an 85\% first-contact resolution rate.
+  \item Integrated the chatbot with a real-time API on Google Cloud AI Platform, reducing average customer handling time by 40\%.
+  \item Employed advanced NLP techniques to understand and generate human-like responses, ensuring high customer satisfaction.
+\end{itemize}
+
+%-------------------------------------------
+% Skills
+%-------------------------------------------
+\section*{SKILLS}
+
+\textbf{Machine Learning \& Deep Learning:} TensorFlow, PyTorch, Keras, Scikit-Learn, Hugging Face Transformers, U-Net, ResNet, LSTM, CNN, RNN, Graph Neural Networks\\[0.3em]
+\textbf{Programming \& Data Processing:} Python, R, SQL, Pandas, NumPy, Apache Spark, Hadoop, Dask\\[0.3em]
+\textbf{Cloud Platforms \& Deployment:} AWS SageMaker, Google Cloud AI Platform, Azure ML, Docker, Kubernetes, Terraform\\[0.3em]
+\textbf{MLOps \& DevOps:} MLflow, Apache Airflow, Jenkins, Git, GitHub, CI/CD Pipelines\\[0.3em]
+\textbf{Specializations:} Natural Language Processing (NLP), Computer Vision, Time Series Forecasting, Model Interpretability (SHAP, LIME), Real-Time Analytics, Anomaly Detection, Recommendation Systems
+
+\end{document}

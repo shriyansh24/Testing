@@ -1,0 +1,178 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+    \small \textbf{+1 930 333 5141} $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{linkedin.com/in/shriyansh-bir-singh}}}
+\end{center}
+
+\vspace{-10pt}
+%----------SUMMARY----------
+\section{\textbf{SUMMARY}}
+Empathetic and innovative AI Machine Learning Engineer skilled in deep learning and real-time analytics to solve complex challenges, drive impactful solutions, and foster teamwork
+
+\vspace{-10pt}
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Machine Learning Engineer Intern}{\textit{Apr 2024 – Present}}
+      {\textbf{Hyphenova AI}}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{Analyzed heterogeneous datasets using Python (Pandas, NumPy) and SQL to extract patterns, reducing data noise by 35\% and guiding strategic decisions}
+        \resumeItem{Constructed and fine-tuned convolutional neural networks in TensorFlow and PyTorch, elevating model precision by 28\% on multimodal tasks}
+        \resumeItem{Engineered scalable data pipelines with Apache Kafka and Spark to support near-real-time ingestion, cutting latency by 40\%}
+        \resumeItem{Instituted continuous integration and deployment with Docker and Kubernetes, enhancing model reliability and accelerating updates by 25\%}
+        \resumeItem{Collaborated with software engineers to embed ML solutions into production, improving system efficiency by 20\%}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Machine Learning Engineer Intern}{\textit{Feb 2023 – May 2024}}
+      {\textbf{Enterprise Business Technologies Pvt. Ltd}}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Leveraged statistical analysis in Python to forecast customer trends, improving forecast accuracy by 18\% through regression and ensemble methods}
+        \resumeItem{Devised ensemble models (Random Forest, Gradient Boosting) for churn prediction, raising AUC scores by 15\% and validating business strategies}
+        \resumeItem{Automated data cleaning and aggregation using custom Python scripts, reducing manual effort by 50\% and ensuring data integrity}
+        \resumeItem{Orchestrated A/B testing protocols that confirmed key strategy impacts, resulting in a 12\% increase in conversion rates}
+        \resumeItem{Developed interactive Tableau dashboards for real-time KPI monitoring, reducing reporting turnaround time by 40\% and enhancing decision-making}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Indiana University Bloomington}{\hfill Aug 2023 – May 2025}
+      {\textbf{Master of Science in Data Science}}{Indiana, United States}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Data Visualization, Big Data Applications, Cloud Computing, Graph Analytics, Applied ML, Deep Learning, Computer Vision, Statistics}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {University of Mumbai}{\hfill Aug 2018 – May 2022}
+      {\textbf{Bachelor of Engineering in Electronics}}{Maharashtra, India}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{\textbf{TECHNICAL SKILLS}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, Scala, SQL, Java} \\
+     \textbf{ML Frameworks}{: TensorFlow, PyTorch, Scikit-learn, Keras, XGBoost} \\
+     \textbf{Data Engineering}{: Apache Spark, Kafka, Hadoop, Azure Data Factory, AWS SageMaker, Glue} \\
+     \textbf{Cloud Platforms}{: AWS (S3, EC2, SageMaker), Azure, GCP (BigQuery)} \\
+     \textbf{DevOps \& Tools}{: Docker, Kubernetes, Terraform, CI/CD, Git, GitHub} \\
+     \textbf{Data Visualization}{: Power BI, Tableau, Matplotlib, Seaborn} \\
+     \textbf{Databases}{: PostgreSQL, MySQL, MongoDB, SQL Server} \\
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{\textbf{PROJECTS}}
+  \resumeSubHeadingListStart
+  
+    \resumeProjectHeading
+        {\textbf{Real-Time Sentiment Analysis System} $|$ \emph{BERT, Kafka, Power BI}}{\textit{Jul 2023 – Oct 2023}}
+        \resumeItemListStart
+          \resumeItem{Devised a BERT-based sentiment analyzer for streaming social media data, elevating classification accuracy by 25\%}
+          \resumeItem{Integrated Apache Kafka for continuous data ingestion and crafted a Power BI dashboard to visualize live sentiment trends, reducing response time by 40\%}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading
+        {\textbf{Adaptive Image Recognition Pipeline} $|$ \emph{ResNet-50, AWS, Docker}}{\textit{Nov 2023 – Feb 2024}}
+        \resumeItemListStart
+          \resumeItem{Formulated an adaptive image recognition pipeline using transfer learning with ResNet-50, enhancing accuracy by 32\% over baselines}
+          \resumeItem{Migrated the pipeline to AWS with Docker containers, reducing inference latency by 30\% and supporting real-time predictions}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\end{document}

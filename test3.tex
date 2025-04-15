@@ -1,0 +1,311 @@
+\documentclass[9pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot,
+    top=0.5 cm,
+    bottom=1.5 cm,  % Reduced bottom margin
+    left=1.5 cm,    % Reduced left margin
+    right=1.5 cm,   % Reduced right margin
+    footskip=0.5 cm % Reduced footer size
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 0, 0}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage[
+    pdftitle={Shriyansh Singh's CV},
+    pdfauthor={Shriyansh Singh},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+\usepackage{ragged2e}
+\usepackage{setspace}
+
+% Ensure that generated pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage{charter}
+
+% Some settings:
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0.15cm}
+\pagenumbering{gobble}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    -1pt
+}{
+    0.15 cm  % Reduced space before the section title
+}{
+    0.1 cm   % Reduced space after the section title
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.03 cm,  % Reduced space above the list
+        parsep=0.03 cm,  % Reduced space between paragraphs within the list
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 8pt % Reduced left margin of the list items
+    ]
+    \justifying
+}{
+    \end{itemize}
+}
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.03 cm,
+        parsep=0.03 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=8pt
+    ]
+    \justifying
+}{
+    \end{itemize}
+}
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0 cm + 0.00001 cm
+    }{
+        0 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+}
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.3 cm}  % Reduced width of the second column
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{, \fill, 4.3 cm}  % Reduced width of the third column
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.4}  % Slightly reduced line spacing
+}{
+    \par\kern\topsep
+}
+
+\newcommand{\placelastupdatedtext}{%
+  \AddToShipoutPictureFG*{%
+    \put(
+        \LenToUnit{\paperwidth-1.5 cm-0 cm+0.05cm},
+        \LenToUnit{\paperheight-0.8 cm} % Moved footer text slightly higher
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in July 2024}\hspace{\widthof{Last updated in July 2024}}
+    }}}%
+  }%
+}%
+
+\let\hrefWithoutArrow\href
+
+\setstretch{1}
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
+
+    \begin{header}
+        \fontsize{18 pt}{18 pt}\selectfont Shriyansh Singh
+
+        \vspace{2 pt}
+    \normalsize
+    \mbox{\hrefWithoutArrow{mailto:singshri@iu.edu}{singshri@iu.edu}}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\hrefWithoutArrow{tel:+1-930-333-5141}{+1 930 333 5141}}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\hrefWithoutArrow{https://linkedin.com/in/shriyansh-bir-singh}{\textbf{LinkedIn}}}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\hrefWithoutArrow{https://github.com/shriyansh24}{\textbf{GitHub}}}%
+\end{header}
+\vspace{2 pt - 0.3 cm}
+
+    \justifying
+
+    \section{Education}
+        \begin{twocolentry}{
+            Aug 2023 – May 2025
+        }
+            \textbf{Indiana University Bloomington, Indiana}\\
+            \textit{Masters of Science in Data Science}
+        \end{twocolentry}
+        
+        \vspace{0.05 cm}
+        
+        \begin{twocolentry}{
+            June 2019 – May 2023
+        }
+            \textbf{University of Mumbai, India}\\
+            \textit{Bachelor of Engineering in Electronics Engineering}
+        \end{twocolentry}
+    
+    \section{Skills}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item \textbf{Programming Languages:} Python, R, SQL, MongoDB, Neo4j, Java, C/C++, Julia, GoLang
+                \item \textbf{ML Toolkit:} Scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, Matplotlib, Hugging Face
+                \item \textbf{Data Engineering:} Hadoop, Spark, AWS, GCP, Docker, Kubernetes, Git, Databricks, Apache Kafka
+                \item \textbf{Analytical Tools:} Tableau, Power BI, D3.js, Statistical Analysis, Time Series Analysis, A/B Testing
+            \end{highlights}
+        \end{onecolentry}
+
+\section{Experience}
+
+\begin{twocolentry}{
+    April 2024 – Present
+}
+    \textbf{Hyphenova AI | Los Angeles, California}\\
+    \textit{Machine Learning Intern}
+\end{twocolentry}
+
+\vspace{0.05 cm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item Engineered predictive models using Python, Scikit-learn, and Random Forest algorithms, leveraging feature selection techniques to increase brand-creator matching success rates by 25\% and enhance overall campaign performance.
+        \item Implemented SMOTE resampling techniques to address data imbalance, which resulted in a 15\% improvement in model accuracy for underrepresented categories, significantly enhancing the reliability of the brand-creator matching system.
+        \item Architected a scalable data pipeline using Apache Spark and AWS, utilizing parallel processing and cloud-native architectures, reducing data processing time by 40\% and enabling real-time analytics for brand engagement metrics.
+        \item Developed and integrated real-time data quality checks across multiple sources using custom validation scripts, improving data reliability by 30\% and reducing error rates in analytics by 20\%.
+        \item Collaborated with cross-functional teams using Agile methodologies to deploy NLP-based content filtering algorithms, boosting successful brand-creator matches by 30\% and increasing user satisfaction scores by 15\%.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.15 cm}
+
+\begin{twocolentry}{
+    May 2022 – Oct 2022
+}
+    \textbf{Enterprise Business Technologies Pvt. Ltd | Mumbai, India}\\
+    \textit{Junior Business Analyst Intern}
+\end{twocolentry}
+
+\vspace{0.05 cm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item Optimized data analysis systems in Power BI by refining data models and automating validation processes, resolving critical accuracy issues and achieving a 15\% improvement in report reliability while reducing generation time by 40\%.
+        \item Conducted comprehensive market analysis using linear regression and time series forecasting, improving forecast accuracy by 18\% and contributing to a 10\% increase in quarterly revenue.
+        \item Aligned project strategies with core business objectives by implementing OKR (Objectives and Key Results) framework, resulting in a 25\% increase in project completion rates and a 20\% improvement in client satisfaction scores.
+    \end{highlights}
+\end{onecolentry}
+
+\section{Projects}
+
+\begin{twocolentry}{
+    Oct 2023 – Jan 2024
+}
+    \textbf{Fraud Detection in Financial Transactions}
+\end{twocolentry}
+
+\vspace{0.05 cm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item Developed a real-time fraud detection system using Python, Scikit-learn, and XGBoost, incorporating feature engineering and hyperparameter tuning, improving detection accuracy by 28\% and reducing false positives by 35\%.
+        \item Engineered advanced features including transaction pattern recognition and anomaly detection using unsupervised learning techniques, increasing the system's reliability and reducing customer complaints related to false flags by 40\%.
+        \item Optimized the model pipeline using Apache Spark by implementing distributed computing and caching mechanisms, cutting data processing time by 40\% and enabling the system to handle a 3x increase in transaction volume without performance degradation.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.15 cm}
+
+\begin{twocolentry}{
+    Aug 2022 – Feb 2023
+}
+    \textbf{Customer Churn Prediction for Telecom Industry}
+\end{twocolentry}
+
+\vspace{0.05 cm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item Built a customer churn prediction model using TensorFlow, Keras, and LSTM networks, optimizing hyperparameters and using time series data, achieving a 22\% increase in customer retention rates through precise identification of at-risk accounts.
+        \item Analyzed customer behavior metrics using Pandas and SQL, employing correlation analysis and feature selection techniques to identify key churn indicators, improving model precision by 18\% and enabling proactive retention strategies.
+        \item Deployed the model on AWS SageMaker, using autoscaling and batch inference to enable scalable predictions, facilitating a 15\% reduction in overall churn rate through targeted customer engagement initiatives.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.15 cm}
+
+\begin{twocolentry}{
+    July 2023 – Nov 2023
+}
+    \textbf{Sales Forecasting using Time Series Analysis}
+\end{twocolentry}
+
+\vspace{0.05 cm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item Developed a sales forecasting model using Prophet, ARIMA, and Exponential Smoothing techniques, selected based on cross-validation results, increasing forecast accuracy by 30\% for monthly revenue predictions.
+        \item Automated data preprocessing using Python and Pandas, including data cleaning, normalization, and outlier detection, reducing data preparation time by 25\% and ensuring consistent data quality across all forecast inputs.
+        \item Designed and implemented an interactive Tableau dashboard integrating forecast results with advanced visualizations and filters, providing real-time, data-driven insights that improved inventory management efficiency by 20\%.
+    \end{highlights}
+\end{onecolentry}
+
+\section{Certifications}
+\begin{justify}
+    \begin{itemize}[leftmargin=*]
+        \item \textbf{IBM:} Data Science Professional Certificate
+        \item \textbf{Google:} Data Analytics Specialization
+        \item \textbf{Deeplearning.ai:} Deep Learning Specialization, NLP Specialization, GANs Specialization 
+    \end{itemize}
+\end{justify}
+        
+\end{document}

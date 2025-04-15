@@ -1,0 +1,195 @@
+%-------------------------
+% Resume in Latex
+% Author : Anonymous
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in} % Adjust this value as needed
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+    \small \textbf{+1 930 333 5141}  $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/shriyansh-bir-singh/}{\textbf{\underline{linkedin.com/in/shriyansh-bir-singh}}} 
+\end{center}
+
+%-----------SUMMARY-----------
+\section{\textbf{SUMMARY}}
+Highly motivated Biostatistics Analyst with hands-on experience in computational biology, bioinformatics, and data analysis. Proficient in R, Python, and multi-omics data processing, with a focus on biostatistical methodologies. Adept at interpreting and presenting scientific data to both technical and non-technical audiences.
+\vspace{-10pt}
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+\vspace{-1pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Machine Learning Intern}{April 2024 - Present}
+      {Hyphenova AI}{Los Angeles, California}
+      \resumeItemListStart
+        \resumeItem{Led the end-to-end development and deployment of NLP-based content filtering algorithms using Agile methodologies, which resulted in a 30\% increase in brand-creator matches and a 15\% boost in user satisfaction}
+        \resumeItem{Collaborated with data engineers to optimize machine learning models, including Random Forest and XGBoost, through iterative hyperparameter tuning, improving predictive accuracy by 25\% and reducing model overfitting}
+        \resumeItem{Designed and implemented scalable data pipelines using Apache Spark and AWS, reducing data processing times by 40\%, enabling real-time data analysis for stakeholder reporting and decision-making}
+        \resumeItem{Integrated advanced resampling techniques (SMOTE) to address data imbalances, enhancing model performance and reliability across underrepresented data categories by 15\%}
+        \resumeItem{Maintained comprehensive documentation and worked closely with cross-functional teams to ensure seamless integration of ML models with existing systems, facilitating real-time data validation and analytics}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Analyst Intern}{May 2022 - Oct 2022}
+      {Enterprise Business Technologies Pvt Ltd}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Developed and optimized data models using Python and SQL to enhance customer segmentation by 20\%, improving targeting strategies for marketing teams}
+        \resumeItem{Performed advanced time series analysis and regression forecasting to improve revenue predictions by 15\%, supporting executive decision-making with more accurate projections}
+        \resumeItem{Collaborated with data engineering teams to deploy machine learning models on Azure ML, reducing model deployment times by 30\% and enabling faster iteration cycles for business-critical applications}
+        \resumeItem{Automated data preprocessing pipelines using Python (Pandas), reducing manual data cleaning tasks by 50\% and improving overall data quality for model training}
+        \resumeItem{Conducted market analysis using regression techniques, identifying key trends that led to a 10\% increase in quarterly revenue by enabling data-driven decisions}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indiana University Bloomington}{Indiana}
+      {Master of Science in Data Science}{Aug 2023 – May 2025}
+  \resumeSubHeadingListEnd
+\vspace{-5pt}
+\textbf{Relevant Courses:} Information Visualization, Data Mining, Applied Machine Learning, Statistics, Big Data Applications, Cloud Computing, Graph Analytics, Applied Database Technologies, Intelligent Systems
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{\textbf{TECHNICAL SKILLS}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: R, Python, SQL, NoSQL, Bash, Git}\\
+     \textbf{Machine Learning}{: Scikit-learn, TensorFlow, PyTorch, XGBoost, Random Forest}\\
+     \textbf{Bioinformatics Tools}{: Bioconductor, DESeq2, EdgeR, GSEA}\\
+     \textbf{Data Analytics}{: RStudio, Pandas, NumPy, Tableau, Power BI}\\
+     \textbf{Statistics}{: Hypothesis Testing, Regression Analysis, Time Series Forecasting, A/B Testing, Multivariate Analysis}
+    }}
+ \end{itemize}
+
+%-----------ACADEMIC PROJECTS-----------
+\section{\textbf{ACADEMIC PROJECTS}}
+\vspace{-3pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Transcriptomics Data Analysis} $|$ \emph{R, Bioconductor, DESeq2}}{March 2024 - May 2024}
+          \resumeItemListStart
+            \resumeItem{Analyzed RNA-seq data from multiple biological samples, conducting differential expression analysis using DESeq2 to identify key gene expression patterns and biological pathways}
+            \resumeItem{Utilized Bioconductor packages and advanced statistical techniques to process large transcriptomics datasets, improving the accuracy of gene identification by 20\%}
+            \resumeItem{Presented findings to both technical and non-technical audiences, using ggplot2 for data visualization, enabling actionable insights for ongoing biological research projects}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Proteomics Data Processing and Analysis} $|$ \emph{R, Python, ggplot2}}{Sep 2023 - Dec 2023}
+          \resumeItemListStart
+            \resumeItem{Processed large proteomics datasets, integrating proteomics and transcriptomics data to identify and analyze biological pathways related to disease mechanisms}
+            \resumeItem{Developed custom R scripts to visualize and interpret protein expression data, improving data quality by 25\% and enhancing biological insight generation}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\vspace{-15pt}
+
+\end{document}

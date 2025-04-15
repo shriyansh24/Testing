@@ -1,0 +1,160 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{%
+  \item\small{#1 \vspace{-4pt}}%
+}
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{-2pt}\item%
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}%
+    \textbf{#1} & #2 \\%
+    \textit{\small #3} & \textit{\small #4} \\%
+  \end{tabular*}\vspace{-7pt}%
+}
+\newcommand{\resumeProjectHeading}[2]{%
+  \item%
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}%
+    \small #1 & #2 \\%
+  \end{tabular*}\vspace{-7pt}%
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+  \small \textbf{+1 930 333 5141} $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{linkedin.com/in/shriyansh-bir-singh}}}
+\end{center}
+
+\vspace{-10pt}
+%----------SUMMARY----------
+\section{\textbf{SUMMARY}}
+Dedicated Data Engineering Intern with strong analytical, communication, and teamwork skills; adept at designing scalable ETL pipelines, ensuring robust data quality, and empowering insights to drive patient outcomes
+
+\vspace{-10pt}
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Data Engineering Intern}{\textit{Apr 2024 – Present}}
+    {\textbf{Hyphenova AI}}{Los Angeles, CA}
+    \resumeItemListStart
+      \resumeItem{Engineered scalable ETL pipelines using Apache Kafka and Spark Streaming to process high-volume transactions with sub-second latency, boosting detection accuracy by 30\%}
+      \resumeItem{Constructed automated data workflows with Python and SQL to integrate heterogeneous sources into a centralized data warehouse, elevating reporting efficiency by 25\%}
+      \resumeItem{Instituted robust data validation frameworks with PySpark and Delta Lake on 10TB+ datasets, enhancing data reliability by 20\%}
+      \resumeItem{Optimized cloud-based ETL processes on AWS (EC2, S3, Lambda) to handle over 10 million records daily, reducing processing time by 40\% and cutting costs by 15\%}
+      \resumeItem{Devised a real-time data quality monitoring system using Apache Airflow, triggering automated alerts that diminished data errors by 30\%}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Data Engineering Intern}{\textit{May 2022 – Oct 2022}}
+    {\textbf{Enterprise Business Technologies Pvt. Ltd}}{Mumbai, India}
+    \resumeItemListStart
+      \resumeItem{Developed automated ETL pipelines with Python and Apache Airflow to ingest data from SQL databases and APIs, reducing refresh time by 40\% and increasing accuracy by 15\%}
+      \resumeItem{Engineered batch processing systems with Apache Spark to aggregate over 2 million records daily, boosting throughput by 30\% for predictive analytics}
+      \resumeItem{Instituted data validation and anomaly detection routines with custom Python scripts, reducing errors by 20\% and ensuring reliable downstream reporting}
+      \resumeItem{Collaborated with analytics teams to design interactive Power BI dashboards, slashing report turnaround time by 40\% and enabling data-driven decision-making}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Indiana University Bloomington}{Indiana, United States}
+    {\textbf{Master of Science in Data Science}}{Aug 2023 – May 2025}
+    \resumeItemListStart
+      \resumeItem{Relevant Coursework: Data Visualization, Big Data Applications, Cloud Computing, Graph Analytics, Applied ML, Deep Learning, Computer Vision, Statistics}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {University of Mumbai}{Maharashtra, India}
+    {\textbf{Bachelor of Engineering in Electronics}}{Aug 2019 – May 2023}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textbf{PROJECTS}}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Cloud Data Warehouse for Healthcare Analytics} $|$ \emph{AWS S3, Glue, Athena}}{\textit{Nov 2023 – Feb 2024}}
+    \resumeItemListStart
+      \resumeItem{Architected a data lake on AWS using S3, Glue, and Athena to consolidate over 10 TB of healthcare data, reducing query latency by 50\%}
+      \resumeItem{Optimized ETL processes by converting raw data to Parquet format, improving query performance by 30\% and supporting real-time dashboards}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Automated Data Quality Monitoring System} $|$ \emph{Apache Airflow, Great Expectations, AWS S3}}{\textit{Jul 2023 – Oct 2023}}
+    \resumeItemListStart
+      \resumeItem{Designed an automated framework using Airflow and Great Expectations to execute 100+ validation checks per pipeline, reducing data errors by 30\%}
+      \resumeItem{Integrated real-time alerting via Slack and email, accelerating issue resolution by 50\% and ensuring consistent data integrity}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{\textbf{SKILLS}}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Programming}{: Python, SQL, Scala, Java} \\
+    \textbf{Data Engineering}{: Apache Spark, Kafka, Apache Airflow, Delta Lake} \\
+    \textbf{Cloud Platforms}{: AWS (S3, EC2, Lambda, Glue), Azure, GCP (BigQuery)} \\
+    \textbf{Databases}{: PostgreSQL, MySQL, MongoDB} \\
+    \textbf{ETL \& Warehousing}{: SQL, Apache NiFi, Snowflake} \\
+    \textbf{Visualization}{: Power BI, Tableau} \\
+    \textbf{DevOps}{: Docker, Kubernetes, Terraform, Git}
+  }}
+\end{itemize}
+
+\end{document}

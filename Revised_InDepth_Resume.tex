@@ -1,0 +1,87 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[left=0.5cm,right=0.5cm,top=1cm,bottom=1cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{*0.3}{*0.3}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{*0.2}{*0.1}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.2em}
+\pagestyle{empty}
+
+\newcommand{\cvitem}[2]{
+  \textbf{#1:} #2\par
+}
+
+\newcommand{\workexp}[4]{
+  \textbf{#1} \hfill \textit{#2}\\
+  \textit{#3} \hfill #4\\
+}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Large SHRIYANSH SINGH}\\
+\small
++1 930 333 5141 | shriyansh.singh24@gmail.com | \href{https://www.linkedin.com/in/shriyansh-bir-singh}{LinkedIn} | \href{https://github.com/shriyansh24}{GitHub}
+\end{center}
+
+\small{Aspiring data scientist with strong skills in data analysis, visualization, and machine learning. Experienced in using tools like Python, TensorFlow, and SQL to create impactful data solutions. Seeking to leverage technical skills and communication abilities to contribute to data-driven decision-making while expanding knowledge in advanced analytics and AI applications.}
+
+\section*{EDUCATION}
+\cvitem{Indiana University Bloomington, Indiana}{Aug 2023 – May 2025}
+Master of Science in Data Science\\
+\textit{Relevant Courses:} Information Visualization, Data Mining, Applied Machine Learning, Statistics, Big Data Applications, Cloud Computing, Cloud Computing, Applied Database Technologies
+
+
+\section*{WORK EXPERIENCE}
+\workexp{Machine Learning Intern}{April 2024 - Present}{Hyphenova AI}{Los Angeles, California}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Increased brand-creator matching success rates by 25\% through the development of predictive models utilizing Python \& Random Forest algorithms
+\item Boosted model accuracy by 15\% for underrepresented categories in the brand-creator matching system by applying SMOTE resampling techniques
+\item Designed and implemented a scalable data pipeline leveraging Apache Spark \& AWS, which reduced data processing time by 40\%
+\item Developed and integrated real-time data quality checks across multiple sources through custom validation scripts, which enhanced data reliability by 30\%
+\item Worked with cross-functional teams in an Agile environment to deploy NLP-based content filtering algorithms, which improved brand-creator matching success by 30\%
+\end{itemize}
+
+\workexp{Junior Business Analyst Intern}{May 2022 - Oct 2022}{Enterprise Business Technologies Pvt. Ltd}{Mumbai, India}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Optimized data analysis systems in Power BI by refining data models and automating validation processes, achieving a 15\% improvement in report reliability and 40\% reduction in report generation time
+\item Conducted comprehensive market analysis using linear regression and time series forecasting techniques, improving forecast accuracy by 18\% and contributing to a 10\% increase in quarterly revenue
+\item Aligned project strategies with core business objectives by implementing the OKR framework, resulting in a 25\% increase in project completion rates and 20\% improvement in client satisfaction scores
+\end{itemize}
+
+\section*{PROJECTS}
+\subsection*{Fraud Detection in Financial Transactions | Oct 2023 – Jan 2024}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Developed a real-time fraud detection system using Python, Scikit-learn, and XGBoost, incorporating feature engineering and hyperparameter tuning, which improved detection accuracy by 28\% and reduced false positives by 35\%
+\item Optimized the model pipeline using Apache Spark by implementing distributed computing and caching mechanisms, cutting data processing time by 40\% and enabling the system to handle a 3x increase in transaction volume without performance degradation
+\end{itemize}
+
+\subsection*{Customer Churn Prediction for Telecom Industry | Aug 2022 – Feb 2023}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Built a customer churn prediction model using TensorFlow, Keras, and LSTM networks, optimizing hyperparameters and using time series data, resulting in a 22\% increase in customer retention rates
+\item Deployed the model on AWS SageMaker, utilizing autoscaling and batch inference to enable scalable predictions, facilitating a 15\% reduction in overall churn rate through targeted customer engagement initiatives
+\end{itemize}
+
+\section*{SKILLS}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item \textbf{Programming Languages:} Python, R, SQL, MongoDB, Neo4j, Java, C/C++, Julia, GoLang
+\item \textbf{ML Toolkit:} Scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, Matplotlib, Hugging Face
+\item \textbf{Data Engineering:} Hadoop, Spark, AWS, GCP, Docker, Kubernetes, Git, Databricks, Apache Kafka
+\item \textbf{Analytical Tools:} Tableau, Power BI, D3.js, Statistical Analysis, Time Series Analysis, A/B Testing
+\end{itemize}
+
+\section*{CERTIFICATIONS}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item \textbf{IBM:} Data Science Professional Certificate
+\item \textbf{Google:} Data Analytics Specialization
+\item \textbf{Deeplearning.ai:} Deep Learning Specialization, NLP Specialization, GANs Specialization
+\end{itemize}
+
+\end{document}

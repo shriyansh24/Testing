@@ -1,0 +1,250 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+\begin{center}
+    \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+    \small \textbf{+1 930 333 5141}  $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{linkedin.com/in/shriyansh-bir-singh}}}
+\end{center}
+
+\vspace{-25pt}
+%--------------Objective
+\section{\textbf{SUMMARY}}
+      {Collaborative Data Engineer passionate about simplifying complex data problems. Skilled in building scalable solutions, optimizing workflows, and driving impact through data-driven insights.}
+
+\vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+\vspace{-1pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Data Engineer Intern}{\textit{Apr 2024 -- Dec 2024}}
+      {\textbf{Hyphenova AI}}{Los Angeles, California}
+      \resumeItemListStart
+        \resumeItem{Built a high-performance data pipeline using Kafka \& Spark Streaming, enabling real-time processing of 500K+ transactions/sec, improving detection speed by 30\%}
+        \resumeItem{Built automated data pipelines using SQL and Python to extract and transform data from various sources into a centralized data warehouse, supporting Power BI dashboards that tracked key performance metrics and increased reporting efficiency by 25\%.}
+        \resumeItem{Enhanced data pipeline robustness by implementing automated data validation and quality checks using PySpark and Delta Lake, implementing schema validation and anomaly detection on datasets exceeding 10TB, improving data reliability by 20\% and ensuring accurate downstream analytics.}
+        \resumeItem{Architected and optimized a scalable data pipeline using Apache Spark on AWS (EC2, S3, and Lambda), processing 10+ million records daily, reducing processing time by 40\%, and cutting operational costs by 15\%, thereby improving analytics capabilities and decision speed.}
+        \resumeItem{Developed a real-time data quality framework using Apache Airflow and Python, incorporating checks for data completeness, consistency, and conformity, which enhanced data reliability by 30\% and minimized analytics errors by 20\%, thus maintaining data integrity across pipelines.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Engineering Intern}{\textit{May 2022 -- Oct 2022}}
+      {\textbf{Enterprise Business Technologies Pvt. Ltd}}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Built automated data pipelines using SQL and Python to extract and transform data from various sources into a centralized data warehouse, supporting Power BI dashboards that tracked key performance metrics and increased reporting efficiency by 25\%.}
+        \resumeItem{Engineered ETL processes with Python and Apache Airflow to automate data integration from SQL databases and APIs, improving data accuracy by 15\% and reducing refresh time by 40\%, enabling scalable and reliable data ingestion into the enterprise data warehouse.}
+        \resumeItem{Developed scalable data pipelines using Apache Airflow and Python, handling over 2 million records daily for predictive analytics, which improved data processing speed by 30\% and enhanced forecasting accuracy, contributing to a 10\% increase in revenue.}
+        \resumeItem{Implemented data validation and anomaly detection within ETL pipelines using Python and SQL scripts, which reduced data errors by 20\% and ensured the integrity of data for critical business operations, enhancing the reliability of downstream analytics.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indiana University Bloomington}{Indiana, United States}
+      {\textbf{Master's of Science in Data Science}}{Aug 2023 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Relevant Courses: Information Visualization, Data Mining, Applied Machine Learning, Statistics, Big Data Applications, Cloud Computing, Graph Analytics, Applied Database Technologies, Intelligent Systems}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Mumbai}{Maharashtra, India}
+      {\textbf{Bachelor's of Engineering in Electronics}}{Aug 2019 -- May 2023}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{\textbf{PROJECTS}}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Fraud Detection in Financial Transactions} $|$ \emph{Python, XGBoost, Apache Spark}}{\textit{Jan 2024 -- Apr 2024}}
+          \resumeItemListStart
+            \resumeItem{Engineered a real-time data pipeline using Apache Kafka and Spark Streaming, processing over 500,000 transactions per second with sub-second latency, leveraging partitioning and fault-tolerance mechanisms to enhance detection speed and accuracy by 30\%.}
+            \resumeItem{Developed scalable data ingestion pipelines using Kafka and AWS Glue to preprocess transactional data for anomaly detection, increasing data throughput by 50\% and ensuring system scalability, which improved reliability and customer satisfaction by 40\%.}
+            \resumeItem{Optimized data processing pipelines with Apache Spark by implementing data partitioning and in-memory computations, which improved processing efficiency by 40\% and scaled the system to handle a 3x increase in transaction volume, reducing performance bottlenecks.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Customer Churn Prediction for Telecom Industry} $|$ \emph{TensorFlow, Keras, AWS SageMaker}}{\textit{Aug 2023 -- Oct 2023}}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a data pipeline using Apache Airflow to automate the ingestion and preprocessing of customer data for churn prediction models, improving data processing time by 35\% and supporting real-time churn analysis.}
+            \resumeItem{Built ETL pipelines with SQL and Apache Spark to process customer data from multiple sources, optimizing data models to support advanced analytics, which increased the precision of churn predictions by 18\% and enabled timely retention strategies.}
+            \resumeItem{Deployed batch inference pipelines on AWS SageMaker, integrated with Lambda for trigger-based execution and Redshift for data storage, optimizing inference latency by 25\% and contributing to a 15\% reduction in churn by enabling rapid, scalable churn predictions.}
+          \resumeItemListEnd
+      % Add additional projects here with \resumeProjectHeading and \resumeItemListStart
+      \resumeProjectHeading
+          {\textbf{Real-Time Stock Price Monitoring System} $|$ \emph{Apache Kafka, Apache Flink, AWS Lambda}}{\textit{Project}}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a real-time data pipeline using Apache Kafka and Apache Flink, processing over 1 million stock price updates per second with sub-second latency, leveraging stream partitioning and stateful processing for enhanced performance.}
+            \resumeItem{Configured Apache Flink jobs with complex event processing to detect significant price changes, generating real-time alerts through AWS SNS, which improved trader decision-making speed by 20\% and reduced missed opportunities by 15\%.}
+            \resumeItem{Implemented scalable data storage on AWS S3 and event-driven processing with AWS Lambda, optimizing resource usage and reducing infrastructure costs by 15\% through efficient use of serverless architecture and on-demand scaling.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Data Lake Architecture for E-commerce Analytics} $|$ \emph{AWS S3, AWS Glue, AWS Athena}}{\textit{Project}}
+          \resumeItemListStart
+            \resumeItem{Architected a data lake on AWS using S3, AWS Glue, and Athena, consolidating over 10 TB of e-commerce data, implementing efficient partitioning and compression techniques to improve data accessibility and reduce query latency by 50\%.}
+            \resumeItem{Developed ETL processes with AWS Glue, transforming raw JSON and CSV data into Parquet format, which enhanced query performance by 30\% and supported real-time business intelligence dashboards.}
+            \resumeItem{Implemented data partitioning and indexing using AWS Glue and Athena, optimizing data storage and retrieval through columnar formats and dynamic partitioning, reducing query costs and times by 20\%.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Batch Data Processing with Apache Spark for Ad Click Analysis} $|$ \emph{Apache Spark, AWS EMR}}{\textit{Project}}
+          \resumeItemListStart
+            \resumeItem{Developed batch processing pipelines with Apache Spark, utilizing DataFrame API and optimized Spark SQL queries to aggregate and analyze over 100 million ad click records daily, reducing processing time by 40\%.}
+            \resumeItem{Enhanced Spark processing pipelines with strategic data partitioning, caching, and in-memory computations, improving performance reporting accuracy and timeliness, which enabled a 25\% increase in actionable insights for advertising strategies.}
+            \resumeItem{Deployed the batch processing pipeline on AWS EMR with dynamic resource allocation and auto-scaling policies, optimizing cluster usage and reducing operational costs by 30\% through efficient resource management.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{IoT Data Ingestion and Processing Pipeline} $|$ \emph{Apache Kafka, AWS Kinesis, Apache Flink}}{\textit{Project}}
+          \resumeItemListStart
+            \resumeItem{Engineered a real-time data ingestion pipeline using Apache Kafka and AWS Kinesis Data Streams, processing over 5 million IoT sensor events per minute with high availability and low latency, supporting critical monitoring systems.}
+            \resumeItem{Implemented real-time stream processing with Apache Flink to execute complex transformations and detect anomalies in IoT sensor data, improving fault detection and operational insights by 40\% with a less than 1-second response time.}
+            \resumeItem{Deployed the pipeline using Docker containers on AWS ECS, ensuring scalable, repeatable deployments, which reduced setup times by 25\% and enhanced system resilience through container orchestration and auto-recovery mechanisms.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Cloud Data Warehouse Migration Project} $|$ \emph{Snowflake, Apache NiFi, Great Expectations}}{\textit{Project}}
+          \resumeItemListStart
+            \resumeItem{Led the migration of on-premise data warehouses to Snowflake, designing robust ETL pipelines with Apache NiFi for automated data transfer, achieving a 30\% reduction in latency and ensuring data consistency through automated validation checks.}
+            \resumeItem{Optimized data ingestion with Snowpipe and Snowflake's auto-scaling capabilities, automating data loading processes and reducing manual intervention, which increased query performance by 40\% and enhanced user experience with faster data availability.}
+            \resumeItem{Collaborated with cross-functional teams to execute data integrity checks using Great Expectations post-migration, achieving a 99.9\% accuracy rate and ensuring high-quality data availability for business-critical applications.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Customer Data Integration Platform} $|$ \emph{Apache NiFi, Apache Kafka, Snowflake}}{\textit{Project}}
+          \resumeItemListStart
+            \resumeItem{Developed a data integration platform with Apache NiFi and Kafka, consolidating over 5 million customer records from CRM, social media, and web analytics into a unified Snowflake data warehouse, enhancing data accessibility and integration reliability.}
+            \resumeItem{Automated data ingestion and transformation workflows using Apache NiFi, integrating ETL processes with Snowflake to streamline data flow, which increased data accessibility by 60\% and reduced manual processing errors by 25\%.}
+            \resumeItem{Implemented comprehensive error handling and data validation using Apache NiFi, which ensured consistent data quality across integrated sources, reducing data discrepancies by 20\% and improving the accuracy of downstream analytics.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Log Data Processing Pipeline for Security Analytics} $|$ \emph{ELK Stack, AWS S3, Kibana}}{\textit{Project}}
+          \resumeItemListStart
+            \resumeItem{Developed a real-time log processing pipeline using the ELK Stack, ingesting over 2 TB of log data daily for security event monitoring, with optimized Logstash configurations to enhance data parsing speed and accuracy.}
+            \resumeItem{Configured Logstash pipelines with custom grok patterns and filtering rules, reducing irrelevant log data by 30\% and enhancing focus on critical security alerts, thereby improving incident response times by 20\%.}
+            \resumeItem{Developed interactive Kibana dashboards for real-time visualization of security threats, including alert trends and anomaly detection, which enabled faster detection and a 25\% reduction in response times to potential breaches.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Scalable ETL Framework for Financial Data} $|$ \emph{Apache Beam, Google Cloud Dataflow, BigQuery}}{\textit{Project}}
+          \resumeItemListStart
+            \resumeItem{Designed a scalable ETL framework using Apache Beam and Google Cloud Dataflow, processing over 100 million financial transactions daily with end-to-end latency under 2 seconds, leveraging dynamic resource scaling and optimized data partitioning.}
+            \resumeItem{Implemented robust data validation and cleansing using custom Apache Beam transforms, which ensured data accuracy and completeness, reducing processing errors by 30\% and supporting high-quality inputs for financial analytics.}
+            \resumeItem{Integrated Google BigQuery with ETL pipelines for high-performance querying and analytics, utilizing clustered tables and partitioning strategies to enhance data throughput by 50\% and reduce query costs by 20\%.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Predictive Maintenance Data Pipeline for Manufacturing} $|$ \emph{Apache Kafka, Spark MLlib, AWS Redshift}}{\textit{Project}}
+          \resumeItemListStart
+            \resumeItem{Engineered a predictive maintenance pipeline with Apache Kafka and Spark MLlib, processing 10 million sensor events daily, leveraging feature extraction and ML model training to reduce maintenance costs by 20\% and downtime by 25\%.}
+            \resumeItem{Deployed ML models for failure prediction using Spark MLlib and integrated them into streaming pipelines with Kafka, enabling real-time maintenance alerts that reduced downtime by 25\% and maintenance costs by 20\%.}
+            \resumeItem{Integrated predictive maintenance pipeline with AWS Lambda for event-driven processing and Redshift for scalable data storage, enabling automated insights and reducing response times by 30\% through seamless data orchestration.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Automated Data Quality Monitoring System} $|$ \emph{Great Expectations, Apache Airflow, AWS S3}}{\textit{Project}}
+          \resumeItemListStart
+            \resumeItem{Developed an automated data quality monitoring system with Great Expectations and Apache Airflow, running over 100 validation checks per pipeline to ensure completeness, accuracy, and consistency, reducing data errors by 30\%.}
+            \resumeItem{Configured Airflow DAGs for automated scheduling of data quality checks, optimizing resource use and reducing manual validation effort by 40\%, while maintaining high standards of data integrity across pipelines.}
+            \resumeItem{Implemented real-time alerting with Slack and email integrations within Airflow, enabling immediate notification of data quality issues, which improved response times by 50\% and ensured swift corrective actions to maintain data integrity.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{\textbf{SKILLS}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, SQL, Scala, Java} \\
+     \textbf{Data Engineering Tools}{: Apache Spark, Apache Kafka, Apache Airflow, Hadoop} \\
+     \textbf{Cloud Platforms}{: AWS (S3, Lambda, Glue, Redshift), Google Cloud (BigQuery, Dataflow), Azure (Data Factory, Synapse Analytics)} \\
+     \textbf{Big Data \& Databases}{: NoSQL (MongoDB, Cassandra), Relational (PostgreSQL, MySQL), Data Warehouses (Snowflake, BigQuery, Redshift)} \\
+     \textbf{Containerization \& DevOps}{: Docker, Kubernetes, Terraform, Git} \\
+     \textbf{Data Visualization}{: Power BI, Tableau, D3.js} \\
+     \textbf{Data Quality}{: Great Expectations, Deequ}
+    }}
+ \end{itemize}
+
+\end{document}

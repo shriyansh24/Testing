@@ -1,0 +1,172 @@
+%-------------------------
+% Resume in Latex
+% Author : Anonymous
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape SHRIYANSH SINGH} \\ \vspace{1pt}
+    \small \textbf{+1 930 333 5141}  $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{LinkedIn}}} 
+\end{center}
+
+\vspace{-10pt}
+
+%--------------Summary
+\section{\textbf{SUMMARY}}
+Innovative Machine Learning Researcher with expertise in developing and deploying advanced models for real-world applications. Skilled in Python, TensorFlow, and Apache Spark, specializing in scalable solutions and iterative model optimization. Collaborative team player adept at driving data-driven solutions in cross-functional environments.
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indiana University Bloomington}{Indiana}
+      {Master of Science in Data Science}{Aug 2023 – May 2025}
+  \resumeSubHeadingListEnd
+\vspace{-5pt}
+\textbf{Relevant Courses:} Information Visualization, Data Mining, Applied Machine Learning, Statistics, Big Data Applications, Cloud Computing, Graph Analytics, Applied Database Technologies, Intelligent Systems
+
+
+%-----------EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Machine Learning Intern}{April 2024 - Present}
+      {Hyphenova AI}{Los Angeles, California}
+      \resumeItemListStart
+        \resumeItem{Led cross-functional teams to deploy and rapidly iterate on NLP-based content filtering algorithms, improving model performance by 30\% through continuous refinement of architectures and hyperparameters}
+        \resumeItem{Optimized predictive models for noisy, high-dimensional data by iterating on Random Forest architectures and advanced feature selection techniques, boosting matching success rates by 25\% through rapid experimentation cycles}
+        \resumeItem{Improved model robustness for underrepresented categories by 15\% through iterative implementation of SMOTE and other resampling techniques, rapidly adapting to evolving data distributions}
+        \resumeItem{Designed and implemented a scalable ML pipeline using Apache Spark and AWS, enabling real-time processing of petabyte-scale data and reducing model training time by 40\%}
+        \resumeItem{Developed automated data quality checks and validation pipelines, improving model reliability by 30\% and enabling faster iteration cycles for continuous model refinement}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Machine Learning Intern}{May 2022 - Oct 2022}
+      {Enterprise Business Technologies Pvt Ltd}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Developed and rapidly iterated on customer segmentation models using K-means and PCA, continuously adapting to evolving data patterns and optimizing hyperparameters, resulting in a 20\% increase in engagement}
+        \resumeItem{Enhanced predictive analytics pipeline for time-series data, leveraging XGBoost and automated hyperparameter tuning, improving forecasting precision by 15\% through rapid experimentation and model versioning}
+        \resumeItem{Streamlined ML model deployment on Azure ML through close collaboration with data engineering, enabling continuous integration and reducing iteration cycles by 30\% for large-scale model experimentation}
+        \resumeItem{Engineered robust Python-based data preprocessing pipelines to handle complex, noisy datasets, reducing data preparation time by 50\% and enabling rapid model retraining on evolving financial data}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{\textbf{SKILLS}}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Scripting Languages}{: Python, R, SQL, NoSQL (MongoDB, Neo4j), Java, Scala} \\
+     \textbf{ML Toolkit}{: Scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, Matplotlib, Hugging Face, CUDA, TensorFlow-GPU} \\
+     \textbf{Data Engineering}{: Hadoop, Spark, Git, Databricks, Apache Kafka, Pyspark} \\
+     \textbf{Analytical Tools}{: Alteryx, Tableau, Power BI, D3.js, Statistical Analysis, Time Series Analysis, A/B Testing} \\
+     \textbf{Cloud Platforms}{: AWS (Lambda, SageMaker, Redshift), GCP (AI Platform), Azure (ML, Synapse Analytics)} \\
+     \textbf{MLOps and Infrastructure}{: Terraform, Docker, Kubernetes, MLflow, Apache Airflow, GPU clusters}
+    }}
+ \end{itemize}
+ 
+%-----------PROJECTS-----------
+\section{\textbf{PROJECTS}}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Fraud Detection System with Graph Neural Networks} $|$ \emph{GraphSAGE, NetworkX, Neo4j, GCP}}{Jan 2024 – Apr 2024}
+      \resumeItemListStart
+        \resumeItem{Engineered a GNN model using GraphSAGE, rapidly iterating through multiple architectures to handle evolving fraud patterns, achieving a 35\% increase in detection accuracy on noisy, high-dimensional financial transaction data}
+        \resumeItem{Developed scalable graph-based feature extraction pipelines using NetworkX and Neo4j, processing millions of entity interactions daily to identify subtle anomalous patterns in real-time}
+        \resumeItem{Implemented a distributed training pipeline on GCP with GPU clusters, enabling rapid experimentation cycles and reducing model iteration time by 40\%, facilitating quick adaptation to new fraud tactics}
+        \resumeItem{Designed a real-time anomaly detection system with continuous learning capabilities, reducing false positives by 20\% through iterative model refinement and advanced techniques for handling highly imbalanced financial data}
+      \resumeItemListEnd
+
+
+\end{document}

@@ -1,0 +1,220 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+\begin{center}
+    \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+    \small \textbf{+1 930 333 5141}  $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{linkedin.com/in/shriyansh-bir-singh}}}
+\end{center}
+
+\vspace{-25pt}
+%--------------SUMMARY--------------
+\section{\textbf{SUMMARY}}
+      {Machine Learning Engineer with hands-on experience in developing and deploying scalable machine learning models and systems. Proficient in Python, TensorFlow, PyTorch, and cloud platforms such as AWS and Google Cloud. Strong background in deep learning, computer vision, natural language processing, and large language models (LLMs). Demonstrated ability to optimize models for performance and scalability, with a focus on industry applications in finance, healthcare, and e-commerce.}
+\vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+\vspace{-1pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Machine Learning Intern}{\textit{Apr 2024 -- Present}}
+      {\textbf{Hyphenova AI}}{Los Angeles, California}
+      \resumeItemListStart
+        \resumeItem{Developed and deployed machine learning models for fraud detection in financial transactions, improving detection accuracy by \textbf{30\%} and reducing false positives by \textbf{20\%}.}
+        \resumeItem{Utilized \textbf{PyTorch} and \textbf{TensorFlow} to build deep learning models, enhancing processing speed by \textbf{25\%} through model optimization techniques.}
+        \resumeItem{Implemented models on \textbf{AWS SageMaker}, enabling scalable deployment and reducing infrastructure costs by \textbf{15\%}.}
+        \resumeItem{Collaborated with cross-functional teams to integrate ML solutions into the company's finance platform, enhancing user engagement by \textbf{20\%}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Science Intern}{\textit{May 2022 -- Oct 2022}}
+      {\textbf{Enterprise Business Technologies Pvt. Ltd}}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Developed a customer churn prediction model using \textbf{TensorFlow} and \textbf{Keras}, achieving an accuracy of \textbf{88\%}, contributing to a \textbf{15\%} reduction in customer churn.}
+        \resumeItem{Built ETL pipelines with \textbf{Apache Airflow} to automate data preprocessing for machine learning models, improving data processing time by \textbf{35\%}.}
+        \resumeItem{Deployed machine learning models on \textbf{AWS SageMaker} and integrated them with \textbf{AWS Lambda} for scalable, serverless execution.}
+        \resumeItem{Conducted exploratory data analysis and feature engineering, enhancing model performance by \textbf{18\%}.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indiana University Bloomington}{Bloomington, Indiana}
+      {\textbf{Master of Science in Data Science}}{Aug 2023 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Relevant Courses: Applied Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Big Data Applications, Cloud Computing, Graph Analytics}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Mumbai}{Mumbai, Maharashtra}
+      {\textbf{Bachelor of Engineering in Electronics}}{Aug 2019 -- May 2023}
+      \resumeItemListStart
+        \resumeItem{Graduated with Honors}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textbf{PROJECTS}}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Fraud Detection in Financial Transactions using Deep Learning} $|$ \emph{Python, TensorFlow, AWS SageMaker}}{\textit{Jan 2024 -- Apr 2024}}
+          \resumeItemListStart
+            \resumeItem{Developed a fraud detection system using \textbf{LSTM} and \textbf{Autoencoders} in \textbf{TensorFlow}, improving detection accuracy by \textbf{30\%}.}
+            \resumeItem{Processed over \textbf{500,000} transactions per second using \textbf{Apache Kafka} and \textbf{Spark Streaming}, ensuring sub-second latency.}
+            \resumeItem{Deployed the model on \textbf{AWS SageMaker}, enabling real-time inference and reducing false positives by \textbf{20\%}.}
+            \resumeItem{Implemented model optimization and tuning techniques, reducing computational costs by \textbf{15\%}.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Medical Image Classification using CNNs} $|$ \emph{PyTorch, OpenCV, Google Cloud}}{\textit{Nov 2023 -- Jan 2024}}
+          \resumeItemListStart
+            \resumeItem{Developed a convolutional neural network (CNN) using \textbf{PyTorch} for classifying medical images, achieving \textbf{94\%} accuracy.}
+            \resumeItem{Applied data augmentation and transfer learning techniques to improve model generalization.}
+            \resumeItem{Deployed the model on \textbf{Google Cloud Platform}, enabling healthcare providers to access the tool via a secure API.}
+            \resumeItem{Improved diagnostic accuracy by \textbf{18\%}, contributing to better patient outcomes.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{E-commerce Recommendation System using NLP and LLMs} $|$ \emph{BERT, Hugging Face, AWS Lambda}}{\textit{Aug 2023 -- Oct 2023}}
+          \resumeItemListStart
+            \resumeItem{Built a recommendation engine using \textbf{BERT} embeddings and \textbf{Hugging Face Transformers}, increasing click-through rates by \textbf{35\%}.}
+            \resumeItem{Processed customer reviews and product descriptions to provide personalized recommendations.}
+            \resumeItem{Deployed the system using \textbf{AWS Lambda} and \textbf{AWS SageMaker}, achieving scalable, serverless execution.}
+            \resumeItem{Boosted sales conversions by \textbf{20\%} through improved product suggestions.}
+          \resumeItemListEnd
+          \pagebreak
+      \resumeProjectHeading
+          {\textbf{Real-Time Stock Price Prediction using LSTM Networks} $|$ \emph{Keras, Apache Kafka, AWS Lambda}}{\textit{May 2023 -- Jul 2023}}
+          \resumeItemListStart
+            \resumeItem{Implemented a real-time stock price prediction model using \textbf{LSTM} networks in \textbf{Keras}, improving prediction accuracy by \textbf{20\%} over traditional methods.}
+            \resumeItem{Utilized \textbf{Apache Kafka} and \textbf{Spark Streaming} for real-time data ingestion and processing of over \textbf{1 million} stock updates per second.}
+            \resumeItem{Deployed the model on \textbf{AWS Lambda} and \textbf{AWS S3}, ensuring high availability and scalability.}
+            \resumeItem{Enhanced trader decision-making speed by \textbf{20\%} through real-time analytics.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Chatbot Development with GPT-4 for Customer Support} $|$ \emph{GPT-4 API, Python, Azure}}{\textit{Feb 2023 -- Apr 2023}}
+          \resumeItemListStart
+            \resumeItem{Created an intelligent chatbot using \textbf{GPT-4 APIs} to handle customer inquiries, reducing response time by \textbf{60\%}.}
+            \resumeItem{Fine-tuned the model with domain-specific data to enhance relevance and accuracy.}
+            \resumeItem{Deployed the chatbot on the company website using \textbf{Azure Functions}, leading to a \textbf{40\%} increase in customer satisfaction scores.}
+            \resumeItem{Integrated the chatbot with CRM systems to streamline customer service operations.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{\textbf{SKILLS}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, SQL, Java, C++} \\
+     \textbf{Machine Learning Frameworks}{: TensorFlow, PyTorch, Keras, Scikit-learn} \\
+     \textbf{Deep Learning}{: CNNs, RNNs, LSTMs, Transformers, GANs} \\
+     \textbf{Natural Language Processing}{: NLTK, SpaCy, Hugging Face Transformers} \\
+     \textbf{Large Language Models}{: GPT-4, BERT, RoBERTa, T5} \\
+     \textbf{Computer Vision}{: OpenCV, YOLOv5, Faster R-CNN, SSD} \\
+     \textbf{Cloud Platforms}{: AWS (SageMaker, Lambda, EC2, S3), Google Cloud Platform, Azure ML} \\
+     \textbf{Big Data Technologies}{: Apache Spark, Kafka, Hadoop} \\
+     \textbf{DevOps Tools}{: Docker, Kubernetes, Git, Jenkins, MLflow} \\
+     \textbf{Data Visualization}{: Matplotlib, Seaborn, Tableau, Power BI} \\
+     \textbf{Version Control}{: Git, GitHub, GitLab}
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section{\textbf{CERTIFICATIONS}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AWS Certified Machine Learning – Specialty} \\
+     \textbf{Google Cloud Professional Machine Learning Engineer} \\
+     \textbf{TensorFlow Developer Certificate} \\
+     \textbf{Microsoft Certified: Azure AI Engineer Associate}
+    }}
+ \end{itemize}
+
+\end{document}

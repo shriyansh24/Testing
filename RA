@@ -1,0 +1,179 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+    \small \textbf{+1-930-333-5141}  $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{LinkedIn}}} $|$
+    \href{https://github.com/shriyansh-singh}{\textbf{\underline{GitHub}}}
+\end{center}
+
+%----------SUMMARY----------
+\section{\textbf{SUMMARY}}
+ML Engineer specialized in search relevance, query understanding, and language models. Experienced in building personalized recommendation systems and domain-adapted NLP solutions.
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Machine Learning Engineer}{\textit{April 2024 - Dec 2024}}
+      {\textbf{Hyphenova AI}}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{\textbf{Designed} and \textbf{implemented} a personalized search ranking system using gradient boosting models that improved query relevance by 28\% across enterprise customers}
+        \resumeItem{\textbf{Developed} novel user interaction signals that enhanced search personalization, resulting in a 35\% increase in user engagement metrics}
+        \resumeItem{\textbf{Built} a query understanding pipeline using transformer models that effectively captured user intent across ambiguous search queries, improving zero-result searches by 45\%}
+        \resumeItem{\textbf{Integrated} LLM-powered question answering capabilities with traditional search, enabling direct answers for 62\% of natural language queries}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer, NLP}{\textit{July 2022 - July 2023}}
+      {\textbf{Enterprise Business Technologies Pvt Ltd}}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Led} the development of domain adaptation techniques for pre-trained language models, achieving 40\% better performance on industry-specific tasks with minimal labeled data}
+        \resumeItem{\textbf{Implemented} efficient retrieval mechanisms that combined dense and sparse representations to improve accuracy while maintaining sub-100ms latency requirements}
+        \resumeItem{\textbf{Created} an evaluation framework that measured natural language generation quality across multiple dimensions, enabling data-driven model selection}
+        \resumeItem{\textbf{Collaborated} with product teams to translate customer needs into technical requirements, ensuring ML solutions addressed real business problems}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textbf{KEY PROJECTS}}
+  \resumeSubHeadingListStart
+  
+    \resumeProjectHeading
+        {\textbf{Enterprise Knowledge Graph Search} $|$ \emph{Python, PyTorch, Elasticsearch, Neo4j}}{\textit{Oct 2023 – Feb 2024}}
+        \resumeItemListStart
+          \resumeItem{\textbf{Architected} a hybrid search system that combined knowledge graph traversal with neural retrieval to answer complex multi-hop questions}
+          \resumeItem{\textbf{Developed} custom embedding models fine-tuned on enterprise data that outperformed general-purpose embeddings by 32\% on domain-specific tasks}
+          \resumeItem{\textbf{Implemented} an efficient caching and indexing strategy that reduced query latency by 65\% while maintaining result quality}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading
+        {\textbf{Adaptive Ranking Framework} $|$ \emph{Python, TensorFlow, Pandas, LightGBM}}{\textit{Mar 2023 – Sep 2023}}
+        \resumeItemListStart
+          \resumeItem{\textbf{Designed} a multi-stage ranking system with specialized models for different query types, improving relevance across the query distribution}
+          \resumeItem{\textbf{Built} an A/B testing infrastructure that enabled rapid experimentation and statistical validation of ranking improvements}
+          \resumeItem{\textbf{Created} feature extraction pipelines that captured user, document, and contextual signals for personalized search experiences}
+        \resumeItemListEnd
+    
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS & CERTIFICATIONS-----------
+\section{\textbf{TECHNICAL SKILLS}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Machine Learning:}{ Search Ranking, Query Understanding, Natural Language Processing, Language Models} \\
+     \textbf{ML Frameworks:}{ PyTorch, TensorFlow, Hugging Face Transformers, Scikit-learn, LightGBM, XGBoost} \\
+     \textbf{Search \& Retrieval:}{ Vector Search, BM25, Hybrid Retrieval, Query Expansion, Personalization, Elasticsearch} \\
+     \textbf{Programming:}{ Python, Java, SQL, C++, Go (basic)} \\
+     \textbf{Data Processing:}{ Pandas, NumPy, Spark, Ray, Feature Engineering, ETL Pipelines} \\
+     \textbf{Tools \& Infrastructure:}{ Git, Docker, Kubernetes, CI/CD, MLflow, Weights \& Biases, AWS, GCP} \\
+     \textbf{Research:}{ Experimental Design, A/B Testing, Model Evaluation, Literature Review} \\
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Indiana University Bloomington}{\hfill Aug 2021 -- May 2023}
+      {\textbf{Master of Science in Computer Science}}{Indiana, United States}
+      \resumeItemListStart
+        \resumeItem{Specialization: Machine Learning and Artificial Intelligence}
+        \resumeItem{Relevant Coursework: Information Retrieval, Statistical Machine Learning, Natural Language Processing, Advanced Algorithms, Distributed Systems}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\end{document}

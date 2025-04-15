@@ -1,0 +1,171 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+\begin{center}
+    \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+    \small \textbf{+1 930 333 5141}  $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{linkedin.com/in/shriyansh-bir-singh}}}
+\end{center}
+
+\vspace{-25pt}
+%--------------Objective
+\section{\textbf{SUMMARY}}
+      {Aspiring Data Scientist with hands-on experience in developing machine learning models and big data applications using Python, Spark, and AWS. Proven track record of implementing data-driven solutions that improve business outcomes. Passionate about leveraging data science for innovation, data integration, and efficiency. Skilled in building scalable data pipelines and transforming data using cloud platforms, eager to drive impactful results at IBM.}
+\vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+\vspace{-1pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Machine Learning Intern}{\textit{Apr 2024 -- Present}}
+      {\textbf{Hyphenova AI}}{Los Angeles, California}
+      \resumeItemListStart
+        \resumeItem{Led cross-functional teams to deploy NLP-based models, utilizing Agile methodologies to improve brand-creator matching by 30\% and enhance overall user satisfaction}
+        \resumeItem{Optimized predictive models by refining Random Forest algorithms and employing advanced feature selection techniques, boosting matching success rates by 25\% and overall campaign performance}
+        \resumeItem{Augmented model accuracy by 15\% for underrepresented categories through SMOTE resampling, enhancing system reliability in handling data imbalance}
+        \resumeItem{Architected scalable data pipelines with Apache Spark and AWS, reducing data processing time by 40\%, which aligns with Databricks' focus on cloud-based data processing}
+        \resumeItem{Incorporated real-time data quality checks with custom scripts, elevating data reliability by 30\% and reducing analytics errors by 20\%}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Business Analyst Intern}{\textit{May 2022 -- Oct 2022}}
+      {\textbf{Enterprise Business Technologies Pvt. Ltd}}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Spearheaded the implementation of the OKR framework, aligning project strategies with business objectives, leading to a 25\% increase in project completion rates and 20\% enhancement in client satisfaction}
+        \resumeItem{Revamped Power BI data analysis systems by refining data models and automating validation processes, improving report reliability by 15\% and accelerating report generation by 40\%}
+        \resumeItem{Conducted market analysis using linear regression and time series forecasting, improving forecast accuracy by 18\% and driving a 10\% increase in quarterly revenue}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indiana University Bloomington}{Indiana, United States}
+      {\textbf{Master of Science in Data Science}}{Aug 2023 -- May 2025}
+    \resumeSubheading
+      {University of Mumbai}{Maharashtra, India}
+      {\textbf{Bachelor of Engineering in Electronics}}{Aug 2019 -- May 2023}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textbf{PROJECTS}}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Fraud Detection in Financial Transactions} $|$ \emph{Python, XGBoost, Apache Spark}}{\textit{Jan 2024 -- Apr 2024}}
+          \resumeItemListStart
+            \resumeItem{Developed a fraud detection system using Python and XGBoost, achieving a 28\% increase in detection accuracy} 
+            \resumeItem{Engineered transaction pattern recognition using unsupervised learning, enhancing system reliability and reducing customer complaints by 40\%}
+            \resumeItem{Built scalable data processing solutions with Apache Spark, enabling seamless data integration and transformation}
+            \resumeItem{Engineered transaction pattern recognition and anomaly detection features with unsupervised learning, increasing system reliability and reducing customer complaints by 40\%}
+            \resumeItem{Streamlined the model pipeline with Apache Spark, enhancing data processing efficiency by 40\% and enabling the system to handle a 3x increase in transaction volume without performance bottlenecks}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Customer Churn Prediction for Telecom Industry} $|$ \emph{TensorFlow, Keras, AWS SageMaker}}{\textit{Aug 2023 -- Oct 2023}}
+          \resumeItemListStart
+            \resumeItem{Designed a customer churn prediction model with TensorFlow, Keras, and LSTM networks, leading to a 22\% increase in customer retention by accurately identifying at-risk accounts}
+            \resumeItem{Analyzed customer behavior using Pandas and SQL, improving model precision by 18\% through correlation analysis and feature selection, enabling targeted retention strategies}
+            \resumeItem{Deployed the model on AWS SageMaker, leveraging autoscaling and batch inference for scalable predictions, resulting in a 15\% reduction in overall churn rate}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{\textbf{SKILLS}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, R, SQL, NoSQL, Java, C/C++, Julia, GoLang, Scala, Bash} \\
+     \textbf{ML Toolkit}{: Scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, Matplotlib, Hugging Face} \\
+     \textbf{Data Engineering}{: Hadoop, Spark, AWS (S3, EC2, Redshift, Lambda, Glue), GCP, Azure (Data Factory, Synapse Analytics), Terraform, Docker, Kubernetes, Git, Databricks, Apache Kafka, Airflow, Pyspark} \\
+     \textbf{Analytical Tools}{: Alteryx, Tableau, Power BI, D3.js, Statistical Analysis, Time Series Analysis, A/B Testing}
+    }}
+ \end{itemize}
+
+\end{document}

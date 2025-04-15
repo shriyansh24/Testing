@@ -1,0 +1,191 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in} % Adjust this value as needed
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+    \small \textbf{+1-930-333-5141}  $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{LinkedIn}}} 
+\end{center}
+
+%----------SUMMARY----------
+\section{\textbf{SUMMARY}}
+Data Engineer with a knack for turning complex data into clear insights. Skilled in developing dashboards and efficient systems that empower proven, informed business decisions. Adept at collaborating with teams to drive efficiency.
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Machine Learning Intern}{\textit{April 2024 - Dec 2024}}
+      {\textbf{Hyphenova AI}}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{Designed and maintained \textbf{ETL pipelines} using \textbf{Apache Spark} and \textbf{AWS} for high-volume data processing, reducing ingestion times by 40\% and enabling real-time data availability}
+        \resumeItem{Developed complex \textbf{SQL queries} to transform and load key datasets into \textbf{BigQuery}, standardizing data across various sources for seamless analytics and reporting}
+        \resumeItem{Created automated data validation scripts in Python (Pandas, PyOD), enhancing \textbf{data quality} by 30\% and reducing analytics errors by 20\%}
+        \resumeItem{Collaborated with product teams to define requirements and build \textbf{interactive dashboards}, utilizing best practices in \textbf{BI} design and user-centric data visualization (adaptable to Looker/LookML)}
+        \resumeItem{Supported real-time \textbf{data monitoring and alerts} with GCP APIs, reducing time to detect issues and improving the reliability of data pipelines}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Analyst Intern}{\textit{May 2022 - Oct 2022}}
+      {\textbf{Enterprise Business Technologies Pvt Ltd}}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{SQL}-driven transformations, automating data refresh and \textbf{dashboard} updates, cutting manual intervention by 50\% and streamlining reporting}
+        \resumeItem{Optimized \textbf{Power BI} models with \textbf{DAX} and \textbf{M language} to improve report load times by 40\% and ensure scalable data analytics solutions}
+        \resumeItem{Orchestrated data workflows and integrated \textbf{OKR frameworks}, aligning business objectives with data-driven insights, resulting in a 25\% increase in project completion rates}
+        \resumeItem{Conducted \textbf{time series} forecasting and trend analysis, improving \textbf{revenue predictions} by 18\% and influencing strategic budgeting decisions}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Indiana University Bloomington}{\hfill Aug 2023 -- May 2025}
+      {\textbf{Master of Science in Data Science}}{Indiana, United States}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Data Visualization, Big Data Applications, Cloud Computing, Graph Analytics, Applied ML, Statistics}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {University of Mumbai}{\hfill Aug 2018 -- May 2022}
+      {\textbf{Bachelor of Engineering in Electronics}}{Maharashtra, India}
+      
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{\textbf{TECHNICAL SKILLS}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming \& Databases:}{ SQL (BigQuery, PostgreSQL), Python, R, NoSQL, MySQL} \\
+     \textbf{Data Visualization \& BI:}{ Looker (LookML), Tableau, Power BI, D3.js} \\
+     \textbf{Cloud \& Data Engineering:}{ GCP (BigQuery, GCP APIs), AWS (Glue, EC2, S3), Apache Spark, Kafka, Airflow} \\
+     \textbf{ETL \& Infrastructure:}{ CI/CD pipelines, Docker, Kubernetes, Terraform} \\
+     \textbf{Machine Learning \& Analytics:}{ Scikit-learn, Regression, Time Series, A/B Testing, Data Mining} \\
+     \textbf{Version Control \& Collaboration:}{ Git, GitHub, Agile/Scrum} \\
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{\textbf{PROJECTS}}
+  \resumeSubHeadingListStart
+  
+    \resumeProjectHeading
+        {\textbf{LookML Modeling and Dashboard Creation} $|$ \emph{Looker, BigQuery, SQL}}{\textit{Jan 2024 – Mar 2024}}
+        \resumeItemListStart
+          \resumeItem{Developed end-to-end \textbf{LookML models} for a multi-terabyte \textbf{BigQuery} dataset, creating flexible Explores and Views that enabled various teams to self-serve insights}
+          \resumeItem{Optimized \textbf{SQL queries} and refined data transformations to improve dashboard performance by 35\%, ensuring near real-time insights for operations and finance teams}
+          
+        \resumeItemListEnd
+        
+    \resumeProjectHeading
+        {\textbf{ETL and Data Quality Automation} $|$ \emph{GCP APIs, Python, Airflow}}{\textit{Nov 2023 – Dec 2023}}
+        \resumeItemListStart
+          \resumeItem{Architected \textbf{ETL processes} in \textbf{Airflow}, ingesting data from diverse sources into \textbf{BigQuery}, supporting near real-time updates for analytics dashboards}
+          \resumeItem{Implemented \textbf{data validation} routines using \textbf{Python} and \textbf{GCP APIs}, resolving anomalies in 20\% of incoming datasets, thus elevating trust in downstream reporting}
+          
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\end{document}
+
+
+%--
+\resumeItem{Automated \textbf{data preprocessing workflows} (Python, Pandas), ensuring near real-time analytics for key stakeholders}
+
+
+\resumeItem{Designed a system of \textbf{dashboards} and \textbf{Looks} offering granular filtering and drill-down capabilities, reducing ad-hoc requests by 40\% and boosting data accessibility}
+
+\resumeItem{Utilized \textbf{CI/CD} pipelines for seamless deployment of new data workflows, decreasing manual intervention and deployment times by 30\%}
+%--

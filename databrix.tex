@@ -1,0 +1,167 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+\begin{center}
+    \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+    \small \textbf{+1 930 333 5141}  $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{linkedin.com/in/shriyansh-bir-singh}}}
+\end{center}
+
+\vspace{-25pt}
+%--------------Objective
+\section{\textbf{SUMMARY}}
+      {Machine Learning Engineer with expertise in building and deploying ML models and data pipelines using Python, TensorFlow, Spark, and AWS. Proven ability to drive business impact through scalable, cloud-based solutions and automation. Passionate about optimizing the entire ML lifecycle to deliver high-performance, reliable outcomes.}
+\vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+\vspace{-1pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Machine Learning Intern}{\textit{Apr 2024 -- Present}}
+      {\textbf{Hyphenova AI}}{Los Angeles, California}
+      \resumeItemListStart
+        \resumeItem{Developed and deployed NLP models using Python and TensorFlow to filter content with 30\% higher accuracy, directly increasing user satisfaction by 15\% through Agile-based iteration and feedback loops.}
+        \resumeItem{Built and automated ML pipelines with Apache Spark and AWS (S3, Glue), cutting data processing time by 40\% and facilitating real-time model deployment and monitoring.}
+        \resumeItem{Improved predictive accuracy of models by 25\% using advanced feature engineering and optimization of Random Forest and deep learning algorithms, enhancing brand-creator matching.}
+        \resumeItem{Streamlined data preprocessing and feature selection to enhance training efficiency, achieving 15\% better accuracy for underrepresented categories by applying SMOTE and custom resampling methods.}
+        \resumeItem{Converted data science prototypes into production models using AWS SageMaker and Lambda, implementing CI/CD pipelines to automate deployment and governance processes.}
+        \resumeItem{Established model monitoring and governance using real-time validation scripts, boosting data reliability by 30\% and reducing errors by 20\%, ensuring consistent model performance.}
+        \resumeItem{Managed the full ML lifecycle, including data collection, preprocessing, deployment, and monitoring using AWS and Python, ensuring scalable and reliable ML operations.}
+        \resumeItem{Implemented advanced ML algorithms, such as deep neural networks and LLMs, to tackle complex datasets and enhance decision-making accuracy.}
+        \resumeItem{Automated ML deployment workflows on AWS using CI/CD pipelines and Terraform, cutting deployment time and minimizing manual errors.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Analyst Intern}{\textit{May 2022 -- Oct 2022}}
+      {\textbf{Enterprise Business Technologies Pvt. Ltd}}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Analyzed large datasets using SQL and Python to drive business strategies, increasing project completion rates by 25\% and client satisfaction by 20\%.}
+        \resumeItem{Optimized data models and automated reports in Power BI, boosting data accuracy by 15\% and cutting report generation time by 40\%, facilitating quicker decision-making.}
+        \resumeItem{Built predictive models using regression analysis in Python, improving forecast accuracy by 18\% and driving a 10\% increase in quarterly revenue.}
+        \resumeItem{Collaborated with cross-functional teams to embed data analytics into decision-making, advancing data-driven business strategies and project outcomes.}
+        \resumeItem{Created automated data validation pipelines in Python, enhancing data integrity across reporting systems and reducing manual errors by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indiana University Bloomington}{Indiana, United States}
+      {\textbf{Master of Science in Data Science}}{Aug 2023 -- May 2025}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{\textbf{SKILLS}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, Java, C++, Scala} \\
+     \textbf{Machine Learning Frameworks}{: TensorFlow, PyTorch, Scikit-learn, XGBoost, Keras} \\
+     \textbf{Data Engineering and Big Data}{: Apache Spark, Hadoop, AWS (S3, EC2, Glue, Lambda, SageMaker), Databricks, Kafka, Airflow, Terraform} \\
+     \textbf{Cloud and Automation}{: AWS (SageMaker, Lambda, Glue), Azure, GCP, Docker, Kubernetes, CI/CD Pipelines, Infrastructure as Code (Terraform)} \\
+     \textbf{NLP and Deep Learning}{: NLP Techniques, LLMs, Transformers, Hugging Face} \\
+     \textbf{Data Analysis and Visualization}{: Pandas, NumPy, Power BI, Tableau, D3.js} \\
+     \textbf{Databases}{: \textbf{SQL} (MySQL, PostgreSQL, Microsoft SQL Server), \textbf{NoSQL} (MongoDB, Cassandra, Neo4j)} \\
+     \textbf{Development Tools}{: Git, Bash, Jupyter Notebooks, VS Code, IntelliJ} \\
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{\textbf{PROJECTS}}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{NLP-Based Content Filtering System} $|$ \emph{Python, TensorFlow, NLP, AWS}}{\textit{Nov 2023 -- Dec 2023}}
+          \resumeItemListStart
+            \resumeItem{Enhanced text classification and entity recognition with LLMs and pre-trained embeddings, improving filtering accuracy of inappropriate content by 40\%}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}

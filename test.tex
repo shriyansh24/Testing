@@ -1,0 +1,167 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in} % Adjust this value as needed
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.95\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.95\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.95\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+    \small \textbf{+1-930-333-5141}  $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{LinkedIn}}} 
+\end{center}
+
+%----------SUMMARY----------
+\section{\textbf{SUMMARY}}
+Data Analyst with expertise in Python, SQL, and statistical modeling. Skilled in transforming complex data into actionable insights to drive business decisions and optimize processes.
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Data Analyst Intern}{\textit{April 2024 - Dec 2024}}
+      {\textbf{Hyphenova AI}}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{Utilized \textbf{Python (Pandas, NumPy)} and \textbf{SQL} for quantitative data analysis on large datasets, identifying patterns in user behavior and creating actionable insights that improved \textbf{prediction models} by 30\% and user retention by 15\%.}
+        \resumeItem{Applied statistical algorithms, such as \textbf{regression} and \textbf{hypothesis testing}, for real-time \textbf{data validation}, reducing analytics errors by 20\% and improving \textbf{model accuracy} by 30\% for critical datasets.}
+        \resumeItem{Developed \textbf{predictive models} using \textbf{linear regression} and \textbf{time series forecasting} to analyze key drivers of user engagement, improving prediction accuracy by 20\% and increasing retention rates.}
+        \resumeItem{Applied advanced \textbf{feature engineering techniques (categorical encoding, imputation)} to improve the performance of predictive models, increasing campaign performance by 25\%.}
+        \resumeItem{Led \textbf{A/B testing} using \textbf{statistical analysis} to evaluate and optimize user engagement strategies, resulting in a 20\% increase in engagement and improved model validation processes.}
+        \resumeItem{Designed and developed \textbf{Tableau dashboards} to visualize key \textbf{quantitative insights (engagement, conversion rates)}, influencing business strategy and enabling data-driven decision-making.}
+      \resumeItemListEnd
+  
+     \resumeSubheading
+      {Data Analyst Intern}{\textit{May 2022 - Oct 2022}}
+      {\textbf{Enterprise Business Technologies Pvt Ltd}}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Performed \textbf{market analysis} using \textbf{Python} (Pandas, NumPy) and applied \textbf{linear regression} and \textbf{time series forecasting}, improving forecast accuracy by 18\% and increasing revenue by 10\%.}
+        \resumeItem{Redesigned \textbf{data models} in \textbf{Power BI} using \textbf{DAX} and \textbf{M language}, improving report accuracy by 15\% and reducing generation time by 40\%.}
+        \resumeItem{Automated \textbf{data pipelines} using Python scripts, reducing manual data entry by 50\% and improving reporting scalability.}
+        \resumeItem{Collaborated with product and sales teams to define \textbf{KPIs}, resulting in a 25\% faster decision-making process aligned with business goals.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indiana University Bloomington}{\hfill Aug 2023 -- May 2025}
+      {\textbf{Master of Science in Data Science}}{Indiana, United States}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Data Visualization, Data Mining, Applied Machine Learning, Statistics, Big Data Applications, Cloud Computing, Graph Analytics, Applied Database Technologies, Intelligent Systems}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{\textbf{TECHNICAL SKILLS}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages:} Python, C++, Java, R \\
+     \textbf{Quantitative Techniques:} Statistical modeling, linear regression, time series analysis, hypothesis testing, A/B testing \\
+     \textbf{Data Science Tools:} Pandas, NumPy, Scikit-learn, XGBoost, ARIMA, Prophet \\
+     \textbf{Data Visualization:} Tableau, Power BI, Excel \\
+     \textbf{Cloud Platforms \& ETL:} AWS (Glue, S3), GCP, Apache Spark, ETL pipelines \\
+     \textbf{Databases:} NoSQL[MongoDB, Cassandra], MySQL, PostgreSQL, Snowflake, Neo4j \\
+     \textbf{Statistics:} Inferential statistics, predictive modeling, regression analysis, forecasting, variance analysis, financial modeling
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{\textbf{PROJECTS}}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Financial Market Sentiment Analysis using Open-Source LLM} $|$ \emph{Python, Hugging Face, SQL, Tableau}}{\textit{June 2024}}
+        \resumeItemListStart
+          \resumeItem{Deployed an open-source \textbf{LLM} from \textbf{Hugging Face Transformers} to analyze sentiment from financial news articles and social media posts, extracting relevant market signals.}
+          \resumeItem{Built an \textbf{automated data pipeline} in \textbf{Python} and \textbf{SQL} to retrieve and preprocess financial news data, generating daily sentiment scores for over 1000 stocks.}
+          \resumeItem{Integrated sentiment scores into a \textbf{quantitative trading model}, combining them with historical price data to predict stock price movements, resulting in a 12\% improvement in model accuracy.}
+          \resumeItem{Developed \textbf{interactive dashboards} in \textbf{Tableau} to visualize sentiment trends and their correlation with stock performance, used by analysts to inform trading decisions.}
+          \resumeItem{Conducted \textbf{feature engineering} on text data, such as tokenization, lemmatization, and sentiment scoring, improving the precision of sentiment analysis by 15\%.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}

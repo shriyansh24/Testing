@@ -1,0 +1,176 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+    \small \textbf{+1-930-333-5141}  $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ 
+    \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{LinkedIn}}} 
+\end{center}
+
+%----------SUMMARY----------
+\section{\textbf{SUMMARY}}
+Machine Learning Engineer skilled in Python, medical image analysis, deep learning, and computer vision; passionate about developing AI-based decision support tools for precision cancer diagnosis.
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Machine Learning Engineer Intern}{\textit{April 2024 - Dec 2024}}
+      {\textbf{Hyphenova AI}}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{Trained DSSM and CNN-based TensorFlow models to classify intent from queries; methods applicable to histopathology image interpretation and multimodal correlation tasks.}
+        \resumeItem{Developed scalable Apache Spark and Kafka pipelines that processed 5TB of logs daily, aligning with multimodal medical imaging workflows.}
+        \resumeItem{Reduced latency by 30\% via TensorFlow model optimization, enabling deployment of real-time clinical decision support tools.}
+        \resumeItem{Deployed models using Docker, Kubernetes, and AWS Sagemaker with 99.9\% uptime; suitable for federated learning architectures.}
+        \resumeItem{Collaborated with data scientists and clinicians to map model predictions to patient-centric performance metrics.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Machine Learning Engineer Intern}{\textit{Feb 2023 - May 2024}}
+      {\textbf{Enterprise Business Technologies Pvt Ltd}}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Built ensemble models for prediction using large-scale tabular datasets, analogous to integrating radiomic and genomic features for cancer risk stratification.}
+        \resumeItem{Engineered robust feature pipelines in Python and SQL, cutting preprocessing time by 50\%; directly applicable to healthcare record harmonization.}
+        \resumeItem{Implemented Docker-based model monitoring tools, reducing anomaly detection time from 5 days to 3 hours.}
+        \resumeItem{Integrated user behavior streams via PySpark, simulating multimodal signal integration from clinical and imaging sources.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textbf{PROJECTS}}
+  \resumeSubHeadingListStart
+  
+    \resumeProjectHeading
+        {\textbf{Dynamic Ranking with Deep \& Wide + DSSM Models} $|$ \emph{Python, TensorFlow, AWS}}{\textit{Nov 2023 – Feb 2024}}
+        \resumeItemListStart
+          \resumeItem{Built a recommender using DSSM and Deep \& Wide models, conceptually similar to combining imaging and demographic inputs for clinical predictions.}
+          \resumeItem{Deployed Airflow-based retraining on AWS; ensured robust, reproducible ML lifecycle management aligned with medical AI deployment standards.}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading
+        {\textbf{Segmentation via Embeddings \& Transfer Learning} $|$ \emph{MXNet, SQL, Tableau}}{\textit{Jul 2023 – Oct 2023}}
+        \resumeItemListStart
+          \resumeItem{Designed unsupervised clustering on deep embeddings to discover user segments; technique transferrable to spatial omics-driven phenotyping.}
+          \resumeItem{Visualized pipeline results in Tableau, fostering interpretability of deep models—crucial in clinical validation environments.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS & CERTIFICATIONS-----------
+\section{\textbf{SKILLS \& CERTIFICATIONS}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming:}{ Python, C++, Shell, SQL, Jupyter} \\
+     \textbf{Medical Imaging \& CV:}{ OpenCV, Scikit-image, TensorFlow/Keras} \\
+     \textbf{ML/DL Frameworks:}{ TensorFlow, PyTorch, Scikit-learn, MXNet} \\
+     \textbf{Deployment/Cloud:}{ Docker, Kubernetes, AWS (S3, EC2, SageMaker), GCP} \\
+     \textbf{Data Engineering:}{ Apache Spark, Kafka, Hadoop, SQL} \\
+     \textbf{Visualization:}{ Tableau, Power BI, Plotly}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Indiana University Bloomington}{\hfill Aug 2023 -- May 2025}
+      {\textbf{Master of Science in Data Science}}{Indiana, United States}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Deep Learning, Computer Vision, Machine Learning, Cloud Computing, Big Data Applications, Graph Analytics}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+\end{document}

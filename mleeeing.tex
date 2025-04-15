@@ -1,0 +1,164 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{10.25in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{%
+  \item\small{#1 \vspace{-4pt}}%
+}
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{-2pt}\item%
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}%
+    \textbf{#1} & #2 \\%
+    \textit{\small #3} & \textit{\small #4} \\%
+  \end{tabular*}\vspace{-7pt}%
+}
+\newcommand{\resumeProjectHeading}[2]{%
+  \item%
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}%
+    \small #1 & #2 \\%
+  \end{tabular*}\vspace{-7pt}%
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setstretch{1.0}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape Shriyansh Singh} \\ \vspace{1pt}
+  \small \textbf{+1 930 333 5141} $|$ \href{mailto:shriyansh.singh24@gmail.com}{\textbf{\underline{shriyansh.singh24@gmail.com}}} $|$ \href{https://www.linkedin.com/in/shriyansh-bir-singh}{\textbf{\underline{linkedin.com/in/shriyansh-bir-singh}}}
+\end{center}
+
+\vspace{-10pt}
+%----------SUMMARY----------
+\section{\textbf{SUMMARY}}
+Innovative Machine Learning Scientist passionate about transforming complex healthcare data into actionable insights through rigorous research, deep learning, and collaborative teamwork
+
+
+
+\vspace{-10pt}
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{\textbf{PROFESSIONAL EXPERIENCE}}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Machine Learning Scientist Intern}{\textit{Apr 2024 – Dec 2024}}
+    {\textbf{Hyphenova AI}}{Los Angeles, CA}
+    \resumeItemListStart
+      \resumeItem{Pioneered development of deep learning models using TensorFlow and PyTorch on clinical datasets, elevating prediction accuracy by 25\%}
+      \resumeItem{Leveraged transfer learning and ensemble strategies to curtail bias and diminish error rates by 20\%}
+      \resumeItem{Implemented automated hyperparameter tuning and cross-validation frameworks, expediting model refinement cycles by 30\%}
+      \resumeItem{Synthesized real-time performance metrics and custom dashboards to monitor model efficacy and articulate insights to multidisciplinary teams}
+      \resumeItem{Partnered with clinical experts to align model objectives with healthcare payer priorities and regulatory standards}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Machine Learning Scientist Intern}{\textit{Feb 2023 – May 2024}}
+    {\textbf{Enterprise Business Technologies Pvt. Ltd}}{Mumbai, India}
+    \resumeItemListStart
+      \resumeItem{Engineered sophisticated ensemble models and deep neural networks to forecast patient outcomes, achieving an 18\% uplift in AUC scores}
+      \resumeItem{Constructed advanced data preprocessing pipelines with Python and SQL, reducing manual wrangling by 50\% and enhancing feature quality}
+      \resumeItem{Conducted rigorous A/B testing and statistical analyses that optimized model performance and increased operational efficiency by 12\%}
+      \resumeItem{Designed interactive Tableau dashboards for comprehensive data visualization, reducing report turnaround time by 40\%}
+      \resumeItem{Collaborated cross-functionally to integrate clinical feedback into iterative model improvements, directly impacting patient care strategies}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textbf{PROJECTS}}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Clinical Outcome Prediction using Deep MLP with Attention} $|$ \emph{TensorFlow, PyTorch}}{\textit{Nov 2023 – Feb 2024}}
+    \resumeItemListStart
+      \resumeItem{Devised an advanced deep MLP architecture incorporating attention mechanisms and skip connections to predict patient outcomes, elevating AUC by 20\%}
+      \resumeItem{Formulated robust feature extraction and normalization pipelines with Python and Pandas to preprocess heterogeneous clinical datasets for enhanced model training}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Clinical Notes Summarization and Concept Extraction} $|$ \emph{BioBERT, Hugging Face Transformers}}{\textit{Jul 2023 – Oct 2023}}
+    \resumeItemListStart
+      \resumeItem{Created a domain-adapted transformer model utilizing BioBERT and Hugging Face Transformers to summarize clinical notes and extract key medical entities, improving retrieval efficiency by 25\%}
+      \resumeItem{Refined tokenization and embedding strategies on an annotated healthcare corpus to boost text classification accuracy and support diagnostic decision-making}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-10pt}
+%-----------EDUCATION-----------
+\section{\textbf{EDUCATION}}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Indiana University Bloomington}{Indiana, United States}
+    {\textbf{Master of Science in Data Science}}{Aug 2023 – May 2025}
+    \resumeItemListStart
+      \resumeItem{Relevant Coursework: Information Visualization, Data Mining, Applied ML, Statistics, Big Data Applications, Cloud Computing, Graph Analytics, Applied Database Technologies, Intelligent Systems}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {University of Mumbai}{Maharashtra, India}
+    {\textbf{Bachelor of Engineering in Electronics}}{Aug 2019 – May 2023}
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{\textbf{SKILLS}}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Programming}{: Python, SQL, C++} \\
+    \textbf{ML/DL Frameworks}{: TensorFlow, PyTorch, Keras, Scikit-learn, Hugging Face Transformers} \\
+    \textbf{Algorithms}{: Ensemble Methods, MLP, LSTM, Attention Mechanisms, Transfer Learning, Statistical Modeling} \\
+    \textbf{Data Processing}{: Pandas, NumPy, Apache Spark} \\
+    \textbf{Cloud Platforms}{: AWS (S3, EC2, SageMaker), Azure} \\
+    \textbf{Visualization}{: Tableau, Power BI} \\
+    \textbf{DevOps}{: Docker, Git}
+  }}
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,91 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[left=0.75cm,right=0.75cm,top=1cm,bottom=1cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{array}
+\usepackage{times}
+
+% Adjusted section and subsection spacing
+\titleformat{\section}{\normalsize\bfseries}{\thesection}{1em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{*0.25}{*0.25} % Reduced spacing for section
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{*0.25}{*0.1} % Reduced spacing for subsection
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.3em}
+\pagestyle{empty}
+
+% Modified \cvitem and \workexp commands to remove extra white space
+\newcommand{\cvitem}[4]{
+  \textbf{#1} \hfill #2\\
+  #3 \hfill #4 \par\vspace{-0.5em} % Adjusted spacing here
+}
+
+\newcommand{\workexp}[4]{
+  \textbf{#1} \hfill #2\\
+  #3 \hfill #4\\
+  \vspace{-1em} % Adjusted spacing here
+}
+
+\begin{document}
+
+\begin{center}
+\textbf{\LARGE SHRIYANSH SINGH}\\
+\normalsize
++1 930 333 5141 | shriyansh.singh24@gmail.com | \href{https://www.linkedin.com/in/shriyansh-bir-singh}{LinkedIn} 
+\end{center}
+
+\section*{SUMMARY}
+Machine Learning Researcher with hands-on experience developing and deploying advanced models in real-world scenarios. Proficient in Python, TensorFlow, and Apache Spark, with a focus on building scalable solutions and iterating on model architectures. Experienced in handling large datasets, noisy data, and conducting hyperparameter tuning to improve model performance.
+
+\section*{EDUCATION}
+\cvitem{Indiana University Bloomington}{Aug 2023 – May 2025}{Master of Science in Data Science}{Indiana}
+\textnormal{Relevant Courses:} Information Visualization, Data Mining, Applied Machine Learning, Statistics, Big Data Applications, Cloud Computing, Graph Analytics, Applied Database Technologies, Intelligent Systems
+
+\section*{PROFESSIONAL EXPERIENCE}
+\workexp{Machine Learning Intern}{April 2024 - Present}{Hyphenova AI}{Los Angeles, California}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Led cross-functional teams to successfully deploy NLP-based content filtering algorithms using Agile methodologies, resulting in a 30\% increase in brand-creator matches and a 15\% improvement in user satisfaction
+\item Optimized predictive models by refining Random Forest algorithms and employing advanced feature selection techniques, iterating on model architectures and hyperparameters, boosting brand-creator matching success rates by 25\% and overall campaign performance
+\item Augmented model accuracy by 15\% for underrepresented categories by implementing SMOTE resampling techniques, demonstrating expertise in handling imbalanced and noisy datasets
+\item Architected a high-performance data pipeline leveraging Apache Spark and AWS, slashing data processing time by 40\%, thus enabling real-time analytics and driving stronger brand engagement
+\item Incorporated real-time data quality checks using custom validation scripts, elevating data reliability by 30\% and reducing analytics errors by 20\%
+\end{itemize}
+
+\workexp{Machine Learning Intern}{May 2022 - Oct 2022}{Enterprise Business Technologies Pvt Ltd}{Mumbai, India}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Developed a customer segmentation model using unsupervised learning techniques (K-means clustering, PCA), iterating on feature transformations and optimizing hyperparameters, resulting in a 20\% increase in customer engagement
+\item Optimized an existing predictive analytics pipeline by integrating XGBoost and tuning hyperparameters, improving forecasting precision by 15\%, iterating rapidly over model versions to refine performance
+\item Collaborated with data engineering teams to deploy machine learning models on Azure ML, enabling rapid iteration and reduced deployment time by 30\%
+\item Automated data preprocessing workflows with Python, reducing manual effort by 50\% and streamlining data processing, allowing for faster model iterations and retraining
+\end{itemize}
+
+\section*{SKILLS}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item \textbf{Scripting Languages:} Python, R, SQL, NoSQL (MongoDB, Neo4j), Java, C/C++, Julia, GoLang, Scala, Bash
+\item \textbf{ML Toolkit:} Scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, Matplotlib, Hugging Face, CUDA, TensorFlow-GPU
+\item \textbf{Data Engineering:} Hadoop, Spark, AWS (S3, EC2, Redshift, Lambda, Glue), GCP, Azure (Data Factory, Synapse Analytics), Terraform, Docker, Kubernetes, Git, Databricks, Apache Kafka, Airflow, Pyspark
+\item \textbf{Analytical Tools:} Alteryx, Tableau, Power BI, D3.js, Statistical Analysis, Time Series Analysis, A/B Testing
+\item \textbf{Cloud Platforms:} AWS (S3, EC2, Lambda, SageMaker, Redshift), GCP (AI Platform, BigQuery, Dataflow), Azure (ML, Synapse Analytics)
+\item \textbf{MLOps and Infrastructure:} Terraform, Docker, Kubernetes, MLflow, Apache Airflow, GPU clusters
+\end{itemize}
+
+\section*{PROJECTS}
+\subsection*{Fraud Detection Using Graph Neural Networks \textnormal{\hfill Jan 2024 – Apr 2024}}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Developed a graph neural network (GNN) model using GraphSAGE to analyze complex relationships between entities, iterating on multiple architectures and hyperparameters, achieving a 35\% increase in fraud detection accuracy
+\item Engineered graph-based features utilizing NetworkX and Neo4j to model entity interactions, improving the model’s ability to identify anomalous patterns indicative of fraudulent behavior
+\item Deployed the model on Google Cloud Platform (GCP), leveraging distributed computing and GPU clusters for efficient model training, reducing training time by 40\%
+\item Implemented an anomaly detection system that continuously monitors transaction networks, reducing false positives by 20\% and providing actionable insights to the fraud investigation team
+\end{itemize}
+
+\subsection*{Document Summarization and Keyword Extraction \textnormal{\hfill May 2023 – Jul 2023}}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item Implemented BERT-based extractive summarization using Hugging Face Transformers, iterating over fine-tuning strategies to improve information retrieval efficiency by 50\% for large corpora
+\item Developed a keyword extraction pipeline using SpaCy and NLTK, iterating on feature sets to achieve 85\% precision in identifying relevant phrases
+\item Deployed the system on TensorFlow Serving for real-time summarization, refining models to optimize performance for specific document types, resulting in 30\% higher summarization accuracy
+\end{itemize}
+
+\end{document}
